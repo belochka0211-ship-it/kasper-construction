@@ -40,6 +40,12 @@
     &--tg:hover { background: $accent; color: $on-accent; border-color: transparent; }
   }
 
+  &__icon {
+    width: 22px;
+    height: 22px;
+    display: block;
+  }
+
   &__pulse {
     position: absolute;
     inset: 0;
