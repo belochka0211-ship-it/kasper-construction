@@ -23,22 +23,22 @@ export default function Projects() {
 
   return (
     <PageWrap>
-      <Seo title={loc({ uk: 'Проєкти', en: 'Projects' })} description={loc({ uk: 'Приватні резиденції та комерційні обʼєкти в Україні та Європі — портфоліо студії Kasper.', en: 'Private residences and commercial spaces in Ukraine and Europe — the Kasper portfolio.' })} path="/projects" />
+      <Seo title={loc({ uk: 'Проєкти', en: 'Projects', ru: 'Проекты' })} description={loc({ uk: 'Приватні резиденції та комерційні обʼєкти в Україні та Європі — портфоліо студії Kasper.', en: 'Private residences and commercial spaces in Ukraine and Europe — the Kasper portfolio.', ru: 'Частные резиденции и коммерческие объекты в Украине и Европе — портфолио студии Kasper.' })} path="/projects" />
       <PageHero
-        kicker={loc({ uk: 'Портфоліо', en: 'Portfolio' })}
-        title={loc({ uk: 'Проєкти, якими пишаємось', en: 'Projects we’re proud of' })}
-        text={loc({ uk: 'Приватні резиденції та комерційні обʼєкти в Україні та Європі.', en: 'Private residences and commercial spaces in Ukraine and Europe.' })}
+        kicker={loc({ uk: 'Портфоліо', en: 'Portfolio', ru: 'Портфолио' })}
+        title={loc({ uk: 'Проєкти, якими пишаємось', en: 'Projects we’re proud of', ru: 'Проекты, которыми гордимся' })}
+        text={loc({ uk: 'Приватні резиденції та комерційні обʼєкти в Україні та Європі.', en: 'Private residences and commercial spaces in Ukraine and Europe.', ru: 'Частные резиденции и коммерческие объекты в Украине и Европе.' })}
         image="/img/hero-construction.jpg"
-        crumbs={[{ label: loc({ uk: 'Проєкти', en: 'Projects' }) }]}
+        crumbs={[{ label: loc({ uk: 'Проєкти', en: 'Projects', ru: 'Проекты' }) }]}
       />
 
       <section className="section">
         <div className="container">
           <div className="section__top">
             <SectionHead
-              kicker={loc({ uk: '700+ обʼєктів', en: '700+ projects' })}
-              title={loc({ uk: 'Кожен проєкт — окрема історія', en: 'Every project is its own story' })}
-              lead={loc({ uk: 'Від приватних резиденцій до штаб-квартир: ми відповідаємо за результат на кожному метрі.', en: 'From private residences to headquarters: we’re accountable for every metre.' })}
+              kicker={loc({ uk: '700+ обʼєктів', en: '700+ projects', ru: '700+ объектов' })}
+              title={loc({ uk: 'Кожен проєкт — окрема історія', en: 'Every project is its own story', ru: 'Каждый проект — отдельная история' })}
+              lead={loc({ uk: 'Від приватних резиденцій до штаб-квартир: ми відповідаємо за результат на кожному метрі.', en: 'From private residences to headquarters: we’re accountable for every metre.', ru: 'От частных резиденций до штаб-квартир: мы отвечаем за результат на каждом метре.' })}
             />
           </div>
 
@@ -63,7 +63,7 @@ export default function Projects() {
           {count < filtered.length && (
             <div className="load-more">
               <button className="btn btn--outline btn--lg" onClick={() => setCount((c) => c + STEP)}>
-                {loc({ uk: 'Показати ще', en: 'Show more' })}
+                {loc({ uk: 'Показати ще', en: 'Show more', ru: 'Показать ещё' })}
               </button>
             </div>
           )}

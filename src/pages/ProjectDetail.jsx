@@ -29,17 +29,17 @@ export default function ProjectDetail() {
   const related = loc(projectsByCat(raw.cat, raw.slug).slice(0, 3))
 
   const facts = [
-    { label: loc({ uk: 'Локація', en: 'Location' }), value: project.location },
-    { label: loc({ uk: 'Рік', en: 'Year' }), value: project.year },
-    { label: loc({ uk: 'Площа', en: 'Area' }), value: project.area },
-    { label: loc({ uk: 'Категорія', en: 'Category' }), value: project.tag },
+    { label: loc({ uk: 'Локація', en: 'Location', ru: 'Локация' }), value: project.location },
+    { label: loc({ uk: 'Рік', en: 'Year', ru: 'Год' }), value: project.year },
+    { label: loc({ uk: 'Площа', en: 'Area', ru: 'Площадь' }), value: project.area },
+    { label: loc({ uk: 'Категорія', en: 'Category', ru: 'Категория' }), value: project.tag },
   ]
 
   return (
     <PageWrap>
       <Seo title={project.title} description={project.summary} path={`/projects/${project.slug}`} image={project.cover} />
       <PageHero
-        kicker={loc({ uk: 'Проєкт', en: 'Project' })}
+        kicker={loc({ uk: 'Проєкт', en: 'Project', ru: 'Проект' })}
         title={project.title}
         text={project.summary}
         image={project.cover}
@@ -62,26 +62,26 @@ export default function ProjectDetail() {
             <div className="case__story">
               {project.challenge && (
                 <Reveal className="case__block">
-                  <span className="case__label">{loc({ uk: 'Задача', en: 'Challenge' })}</span>
+                  <span className="case__label">{loc({ uk: 'Задача', en: 'Challenge', ru: 'Задача' })}</span>
                   <p className="case__text">{project.challenge}</p>
                 </Reveal>
               )}
               {project.solution && (
                 <Reveal className="case__block" delay={0.06}>
-                  <span className="case__label">{loc({ uk: 'Рішення', en: 'Solution' })}</span>
+                  <span className="case__label">{loc({ uk: 'Рішення', en: 'Solution', ru: 'Решение' })}</span>
                   <p className="case__text">{project.solution}</p>
                 </Reveal>
               )}
               {project.result && (
                 <Reveal className="case__block" delay={0.12}>
-                  <span className="case__label">{loc({ uk: 'Результат', en: 'Result' })}</span>
+                  <span className="case__label">{loc({ uk: 'Результат', en: 'Result', ru: 'Результат' })}</span>
                   <p className="case__text">{project.result}</p>
                 </Reveal>
               )}
             </div>
             {project.scope && (
               <Reveal className="case__scope" delay={0.08}>
-                <h3 className="case__scope-title">{loc({ uk: 'Обсяг робіт', en: 'Scope of work' })}</h3>
+                <h3 className="case__scope-title">{loc({ uk: 'Обсяг робіт', en: 'Scope of work', ru: 'Объём работ' })}</h3>
                 <ul className="case__scope-list">
                   {project.scope.map((s) => (
                     <li className="case__scope-item" key={s}>
@@ -104,12 +104,12 @@ export default function ProjectDetail() {
 
           {/* Before / after */}
           <Reveal className="ba-block">
-            <span className="ba-block__label">{loc({ uk: 'До / Після', en: 'Before / After' })}</span>
+            <span className="ba-block__label">{loc({ uk: 'До / Після', en: 'Before / After', ru: 'До / После' })}</span>
             <BeforeAfter
               before={project.gallery[1]}
               after={project.gallery[0]}
-              labelBefore={loc({ uk: 'До', en: 'Before' })}
-              labelAfter={loc({ uk: 'Після', en: 'After' })}
+              labelBefore={loc({ uk: 'До', en: 'Before', ru: 'До' })}
+              labelAfter={loc({ uk: 'Після', en: 'After', ru: 'После' })}
             />
           </Reveal>
 
@@ -117,7 +117,7 @@ export default function ProjectDetail() {
           <div className="gallery">
             {project.gallery.map((src, i) => (
               <Reveal className={`gallery__item${i % 3 === 0 ? ' gallery__item--wide' : ''}`} key={src + i} delay={(i % 2) * 0.08}>
-                <button className="gallery__btn" onClick={() => setLb(i)} aria-label={`${loc({ uk: 'Відкрити фото', en: 'Open photo' })} ${i + 1}`}>
+                <button className="gallery__btn" onClick={() => setLb(i)} aria-label={`${loc({ uk: 'Відкрити фото', en: 'Open photo', ru: 'Открыть фото' })} ${i + 1}`}>
                   <Img className="gallery__img" src={src} alt={`${project.title} — ${i + 1}`} sizes="(min-width:768px) 50vw, 100vw" />
                   <span className="gallery__zoom" aria-hidden="true">⤢</span>
                 </button>
@@ -132,7 +132,7 @@ export default function ProjectDetail() {
       {related.length > 0 && (
         <section className="section">
           <div className="container">
-            <SectionHead kicker={loc({ uk: 'Схожі роботи', en: 'Similar work' })} title={loc({ uk: 'Інші проєкти', en: 'Other projects' })} />
+            <SectionHead kicker={loc({ uk: 'Схожі роботи', en: 'Similar work', ru: 'Похожие работы' })} title={loc({ uk: 'Інші проєкти', en: 'Other projects', ru: 'Другие проекты' })} />
             <ul className="projects-grid">
               {related.map((p) => <ProjectCard key={p.slug} project={p} />)}
             </ul>

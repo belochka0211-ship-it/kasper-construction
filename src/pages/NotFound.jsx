@@ -9,9 +9,9 @@ export default function NotFound() {
       <section className="notfound">
         <div className="container notfound__inner">
           <span className="notfound__code">404</span>
-          <h1 className="notfound__title">{loc({ uk: 'Сторінку не знайдено', en: 'Page not found' })}</h1>
-          <p className="notfound__text">{loc({ uk: 'Можливо, її переміщено або вона ще будується.', en: 'It may have moved, or it’s still under construction.' })}</p>
-          <Link className="btn btn--accent btn--lg" to="/">{loc({ uk: 'На головну', en: 'Back home' })}</Link>
+          <h1 className="notfound__title">{loc({ uk: 'Сторінку не знайдено', en: 'Page not found', ru: 'Страница не найдена' })}</h1>
+          <p className="notfound__text">{loc({ uk: 'Можливо, її переміщено або вона ще будується.', en: 'It may have moved, or it’s still under construction.', ru: 'Возможно, она перемещена или ещё строится.' })}</p>
+          <Link className="btn btn--accent btn--lg" to="/">{loc({ uk: 'На головну', en: 'Back home', ru: 'На главную' })}</Link>
         </div>
       </section>
     </PageWrap>

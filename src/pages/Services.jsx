@@ -11,22 +11,22 @@ import useLocale from '../hooks/useLocale'
 import { services } from '../data/services'
 
 const formats = [
-  { n: '01', title: { uk: 'Окрема послуга', en: 'A single service' }, text: { uk: 'Беремо лише потрібний етап — наприклад, технагляд чи дизайн інтерʼєру.', en: 'We take just the stage you need — say, supervision or interior design.' } },
-  { n: '02', title: { uk: 'Комплекс під ключ', en: 'Full turnkey' }, text: { uk: 'Повний цикл від проєкту до ключів з одним центром відповідальності.', en: 'The full cycle from project to keys, with one point of responsibility.' } },
-  { n: '03', title: { uk: 'Супровід та сервіс', en: 'Support & service' }, text: { uk: 'Гарантійне обслуговування, доукомплектація та авторський нагляд.', en: 'Warranty service, finishing touches and designer supervision.' } },
+  { n: '01', title: { uk: 'Окрема послуга', en: 'A single service', ru: 'Отдельная услуга' }, text: { uk: 'Беремо лише потрібний етап — наприклад, технагляд чи дизайн інтерʼєру.', en: 'We take just the stage you need — say, supervision or interior design.', ru: 'Берём только нужный этап — например, технадзор или дизайн интерьера.' } },
+  { n: '02', title: { uk: 'Комплекс під ключ', en: 'Full turnkey', ru: 'Комплекс под ключ' }, text: { uk: 'Повний цикл від проєкту до ключів з одним центром відповідальності.', en: 'The full cycle from project to keys, with one point of responsibility.', ru: 'Полный цикл от проекта до ключей с одним центром ответственности.' } },
+  { n: '03', title: { uk: 'Супровід та сервіс', en: 'Support & service', ru: 'Сопровождение и сервис' }, text: { uk: 'Гарантійне обслуговування, доукомплектація та авторський нагляд.', en: 'Warranty service, finishing touches and designer supervision.', ru: 'Гарантийное обслуживание, доукомплектация и авторский надзор.' } },
 ]
 
 export default function Services() {
   const { loc } = useLocale()
   return (
     <PageWrap>
-      <Seo title={loc({ uk: 'Послуги', en: 'Services' })} description={loc({ uk: 'Повний цикл — від ідеї до ключів: управління, будівництво, дизайн, інженерія, технагляд, меблі.', en: 'The full cycle — from idea to keys: management, construction, design, engineering, supervision, furniture.' })} path="/services" />
+      <Seo title={loc({ uk: 'Послуги', en: 'Services', ru: 'Услуги' })} description={loc({ uk: 'Повний цикл — від ідеї до ключів: управління, будівництво, дизайн, інженерія, технагляд, меблі.', en: 'The full cycle — from idea to keys: management, construction, design, engineering, supervision, furniture.', ru: 'Полный цикл — от идеи до ключей: управление, строительство, дизайн, инженерия, технадзор, мебель.' })} path="/services" />
       <PageHero
-        kicker={loc({ uk: 'Послуги', en: 'Services' })}
-        title={loc({ uk: 'Повний цикл — від ідеї до ключів', en: 'The full cycle — from idea to keys' })}
-        text={loc({ uk: 'Шість напрямів, які можна замовити окремо або як комплекс під ключ.', en: 'Six services you can order on their own or as a full turnkey package.' })}
+        kicker={loc({ uk: 'Послуги', en: 'Services', ru: 'Услуги' })}
+        title={loc({ uk: 'Повний цикл — від ідеї до ключів', en: 'The full cycle — from idea to keys', ru: 'Полный цикл — от идеи до ключей' })}
+        text={loc({ uk: 'Шість напрямів, які можна замовити окремо або як комплекс під ключ.', en: 'Six services you can order on their own or as a full turnkey package.', ru: 'Шесть направлений, которые можно заказать отдельно или как комплекс под ключ.' })}
         image="/img/hero-build.jpg"
-        crumbs={[{ label: loc({ uk: 'Послуги', en: 'Services' }) }]}
+        crumbs={[{ label: loc({ uk: 'Послуги', en: 'Services', ru: 'Услуги' }) }]}
       />
 
       <section className="section">
@@ -40,7 +40,7 @@ export default function Services() {
       {/* Formats of cooperation */}
       <section className="section section--alt">
         <div className="container">
-          <SectionHead kicker={loc({ uk: 'Формати співпраці', en: 'Ways to work with us' })} title={loc({ uk: 'Як з нами працювати', en: 'How to work with us' })} />
+          <SectionHead kicker={loc({ uk: 'Формати співпраці', en: 'Ways to work with us', ru: 'Форматы сотрудничества' })} title={loc({ uk: 'Як з нами працювати', en: 'How to work with us', ru: 'Как с нами работать' })} />
           <ul className="formats">
             {formats.map((f, i) => (
               <Reveal as="li" className="format-card" key={f.n} delay={(i % 3) * 0.08}>

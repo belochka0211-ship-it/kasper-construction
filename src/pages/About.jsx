@@ -12,25 +12,25 @@ import { asset } from '../lib/asset'
 import useLocale from '../hooks/useLocale'
 
 const values = [
-  { title: { uk: 'Прозорість', en: 'Transparency' }, text: { uk: 'Бюджет фіксуємо в договорі, щотижня шлемо звіт із фото. Ніяких «дорахуємо потім».', en: 'We fix the budget in the contract and send a weekly report with photos. No “we’ll add it later”.' } },
-  { title: { uk: 'Якість', en: 'Quality' }, text: { uk: 'Перевіряємо не лише те, що видно. Прихована інженерія й вузли — теж під контролем.', en: 'We check more than what’s visible. Hidden engineering and joints are controlled too.' } },
-  { title: { uk: 'Строки', en: 'Timelines' }, text: { uk: 'Графік складаємо чесний, а не «щоб підписали». І тримаємось його.', en: 'We make an honest schedule, not one “just to get a signature”. And we keep to it.' } },
-  { title: { uk: 'Відповідальність', en: 'Ownership' }, text: { uk: 'За весь обʼєкт відповідаємо ми. Не доведеться зʼясовувати, хто винен серед пʼяти бригад.', en: 'We’re responsible for the whole site. No figuring out who’s to blame among five crews.' } },
+  { title: { uk: 'Прозорість', en: 'Transparency', ru: 'Прозрачность' }, text: { uk: 'Бюджет фіксуємо в договорі, щотижня шлемо звіт із фото. Ніяких «дорахуємо потім».', en: 'We fix the budget in the contract and send a weekly report with photos. No “we’ll add it later”.', ru: 'Бюджет фиксируем в договоре, каждую неделю отправляем отчёт с фото. Никаких «дорасчитаем потом».' } },
+  { title: { uk: 'Якість', en: 'Quality', ru: 'Качество' }, text: { uk: 'Перевіряємо не лише те, що видно. Прихована інженерія й вузли — теж під контролем.', en: 'We check more than what’s visible. Hidden engineering and joints are controlled too.', ru: 'Проверяем не только то, что видно. Скрытая инженерия и узлы — тоже под контролем.' } },
+  { title: { uk: 'Строки', en: 'Timelines', ru: 'Сроки' }, text: { uk: 'Графік складаємо чесний, а не «щоб підписали». І тримаємось його.', en: 'We make an honest schedule, not one “just to get a signature”. And we keep to it.', ru: 'График составляем честный, а не «чтобы подписали». И держимся его.' } },
+  { title: { uk: 'Відповідальність', en: 'Ownership', ru: 'Ответственность' }, text: { uk: 'За весь обʼєкт відповідаємо ми. Не доведеться зʼясовувати, хто винен серед пʼяти бригад.', en: 'We’re responsible for the whole site. No figuring out who’s to blame among five crews.', ru: 'За весь объект отвечаем мы. Не придётся выяснять, кто виноват среди пяти бригад.' } },
 ]
 
 const process = [
-  { step: '01', title: { uk: 'Знайомство', en: 'Getting to know you' }, text: { uk: 'Зустрічаємось, дивимось ділянку чи квартиру, розбираємось, чого ви хочете.', en: 'We meet, look at the site or flat, and work out what you actually want.' } },
-  { step: '02', title: { uk: 'Проєкт і кошторис', en: 'Design & estimate' }, text: { uk: 'Готуємо документацію й рахуємо вартість, яку потім не «перерахуємо по ходу».', en: 'We prepare the documentation and a cost we won’t “recalculate as we go”.' } },
-  { step: '03', title: { uk: 'Будівництво', en: 'Construction' }, text: { uk: 'Будуємо поетапно, з технаглядом і звітами, щоб ви були в курсі.', en: 'We build stage by stage, with supervision and reports, so you stay in the loop.' } },
-  { step: '04', title: { uk: 'Здача під ключ', en: 'Turnkey handover' }, text: { uk: 'Передаємо обʼєкт з документами й лишаємось на звʼязку по гарантії.', en: 'We hand over the site with documents and stay in touch for the warranty.' } },
+  { step: '01', title: { uk: 'Знайомство', en: 'Getting to know you', ru: 'Знакомство' }, text: { uk: 'Зустрічаємось, дивимось ділянку чи квартиру, розбираємось, чого ви хочете.', en: 'We meet, look at the site or flat, and work out what you actually want.', ru: 'Встречаемся, смотрим участок или квартиру, разбираемся, чего вы хотите.' } },
+  { step: '02', title: { uk: 'Проєкт і кошторис', en: 'Design & estimate', ru: 'Проект и смета' }, text: { uk: 'Готуємо документацію й рахуємо вартість, яку потім не «перерахуємо по ходу».', en: 'We prepare the documentation and a cost we won’t “recalculate as we go”.', ru: 'Готовим документацию и считаем стоимость, которую потом не «пересчитаем по ходу».' } },
+  { step: '03', title: { uk: 'Будівництво', en: 'Construction', ru: 'Строительство' }, text: { uk: 'Будуємо поетапно, з технаглядом і звітами, щоб ви були в курсі.', en: 'We build stage by stage, with supervision and reports, so you stay in the loop.', ru: 'Строим поэтапно, с технадзором и отчётами, чтобы вы были в курсе.' } },
+  { step: '04', title: { uk: 'Здача під ключ', en: 'Turnkey handover', ru: 'Сдача под ключ' }, text: { uk: 'Передаємо обʼєкт з документами й лишаємось на звʼязку по гарантії.', en: 'We hand over the site with documents and stay in touch for the warranty.', ru: 'Передаём объект с документами и остаёмся на связи по гарантии.' } },
 ]
 
 const timeline = [
-  { y: '2012', t: { uk: 'Заснування', en: 'Founded' }, d: { uk: 'Kasper починає з ремонтів квартир у Києві.', en: 'Kasper starts out doing apartment renovations in Kyiv.' } },
-  { y: '2015', t: { uk: 'Перші обʼєкти під ключ', en: 'First turnkey projects' }, d: { uk: 'Переходимо до повного циклу будівництва.', en: 'We move to full-cycle construction.' } },
-  { y: '2018', t: { uk: 'Власне виробництво', en: 'Own workshop' }, d: { uk: 'Запускаємо цех корпусних і мʼяких меблів.', en: 'We open a workshop for cabinetry and upholstery.' } },
-  { y: '2021', t: { uk: 'Комерційні простори', en: 'Commercial spaces' }, d: { uk: 'Офіси, готелі та шоуруми у портфоліо.', en: 'Offices, hotels and showrooms join the portfolio.' } },
-  { y: '2024', t: { uk: '700+ проєктів', en: '700+ projects' }, d: { uk: 'Працюємо в Україні та Європі, команда 64 людини.', en: 'Working across Ukraine and Europe, a team of 64.' } },
+  { y: '2012', t: { uk: 'Заснування', en: 'Founded', ru: 'Основание' }, d: { uk: 'Kasper починає з ремонтів квартир у Києві.', en: 'Kasper starts out doing apartment renovations in Kyiv.', ru: 'Kasper начинает с ремонтов квартир в Киеве.' } },
+  { y: '2015', t: { uk: 'Перші обʼєкти під ключ', en: 'First turnkey projects', ru: 'Первые объекты под ключ' }, d: { uk: 'Переходимо до повного циклу будівництва.', en: 'We move to full-cycle construction.', ru: 'Переходим к полному циклу строительства.' } },
+  { y: '2018', t: { uk: 'Власне виробництво', en: 'Own workshop', ru: 'Собственное производство' }, d: { uk: 'Запускаємо цех корпусних і мʼяких меблів.', en: 'We open a workshop for cabinetry and upholstery.', ru: 'Запускаем цех корпусной и мягкой мебели.' } },
+  { y: '2021', t: { uk: 'Комерційні простори', en: 'Commercial spaces', ru: 'Коммерческие пространства' }, d: { uk: 'Офіси, готелі та шоуруми у портфоліо.', en: 'Offices, hotels and showrooms join the portfolio.', ru: 'Офисы, отели и шоурумы в портфолио.' } },
+  { y: '2024', t: { uk: '700+ проєктів', en: '700+ projects', ru: '700+ проектов' }, d: { uk: 'Працюємо в Україні та Європі, команда 64 людини.', en: 'Working across Ukraine and Europe, a team of 64.', ru: 'Работаем в Украине и Европе, команда 64 человека.' } },
 ]
 
 export default function About() {
@@ -41,28 +41,28 @@ export default function About() {
 
   return (
     <PageWrap>
-      <Seo title={loc({ uk: 'Про нас', en: 'About' })} description={loc({ uk: '13 років досвіду, 700+ завершених обʼєктів. Інженери, архітектори та будівельники Kasper.', en: '13 years of experience, 700+ completed projects. The engineers, architects and builders of Kasper.' })} path="/about" />
+      <Seo title={loc({ uk: 'Про нас', en: 'About', ru: 'О нас' })} description={loc({ uk: '13 років досвіду, 700+ завершених обʼєктів. Інженери, архітектори та будівельники Kasper.', en: '13 years of experience, 700+ completed projects. The engineers, architects and builders of Kasper.', ru: '13 лет опыта, 700+ завершённых объектов. Инженеры, архитекторы и строители Kasper.' })} path="/about" />
       <PageHero
-        kicker={loc({ uk: 'Про студію', en: 'About the studio' })}
-        title={loc({ uk: '13 років, 700+ обʼєктів і жодного «ми за це не відповідаємо»', en: '13 years, 700+ projects and no “that’s not our problem”' })}
-        text={loc({ uk: 'Команда інженерів, архітекторів і будівельників, яка доводить обʼєкт від першого ескізу до ключів.', en: 'A team of engineers, architects and builders who take a project from the first sketch to the keys.' })}
+        kicker={loc({ uk: 'Про студію', en: 'About the studio', ru: 'О студии' })}
+        title={loc({ uk: '13 років, 700+ обʼєктів і жодного «ми за це не відповідаємо»', en: '13 years, 700+ projects and no “that’s not our problem”', ru: '13 лет, 700+ объектов и ни одного «мы за это не отвечаем»' })}
+        text={loc({ uk: 'Команда інженерів, архітекторів і будівельників, яка доводить обʼєкт від першого ескізу до ключів.', en: 'A team of engineers, architects and builders who take a project from the first sketch to the keys.', ru: 'Команда инженеров, архитекторов и строителей, которая ведёт объект от первого эскиза до ключей.' })}
         image="/img/hero-wide.jpg"
-        crumbs={[{ label: loc({ uk: 'Про нас', en: 'About' }) }]}
+        crumbs={[{ label: loc({ uk: 'Про нас', en: 'About', ru: 'О нас' }) }]}
       />
 
       {/* Intro split */}
       <section className="section">
         <div className="container about-intro" ref={ref}>
           <div className="about-intro__media">
-            <motion.img className="about-intro__img" style={{ y }} src={asset('/img/int-1.jpg')} alt={loc({ uk: 'Інтерʼєр проєкту Kasper', en: 'Kasper project interior' })} loading="lazy" />
+            <motion.img className="about-intro__img" style={{ y }} src={asset('/img/int-1.jpg')} alt={loc({ uk: 'Інтерʼєр проєкту Kasper', en: 'Kasper project interior', ru: 'Интерьер проекта Kasper' })} loading="lazy" />
           </div>
           <div className="about-intro__content">
-            <SectionHead kicker={loc({ uk: 'Хто ми', en: 'Who we are' })} title={loc({ uk: 'Проєктувальники й будівельники під одним дахом', en: 'Designers and builders under one roof' })} />
+            <SectionHead kicker={loc({ uk: 'Хто ми', en: 'Who we are', ru: 'Кто мы' })} title={loc({ uk: 'Проєктувальники й будівельники під одним дахом', en: 'Designers and builders under one roof', ru: 'Проектировщики и строители под одной крышей' })} />
             <Reveal as="p" className="about-intro__text" delay={0.1}>
-              {loc({ uk: 'Почали у 2012-му з ремонтів квартир. Швидко набридло, що проєктувальники кивають на будівельників, а ті — на постачальників, тож зібрали всіх під один дах. Так клієнту лишається один контакт, а нам — нікого звинувачувати, крім себе.', en: 'We started in 2012 with apartment renovations. We quickly got tired of designers blaming builders and builders blaming suppliers, so we put everyone under one roof. That leaves the client with one contact — and us with no one to blame but ourselves.' })}
+              {loc({ uk: 'Почали у 2012-му з ремонтів квартир. Швидко набридло, що проєктувальники кивають на будівельників, а ті — на постачальників, тож зібрали всіх під один дах. Так клієнту лишається один контакт, а нам — нікого звинувачувати, крім себе.', en: 'We started in 2012 with apartment renovations. We quickly got tired of designers blaming builders and builders blaming suppliers, so we put everyone under one roof. That leaves the client with one contact — and us with no one to blame but ourselves.', ru: 'Начали в 2012-м с ремонтов квартир. Быстро надоело, что проектировщики кивают на строителей, а те — на поставщиков, поэтому собрали всех под одной крышей. Так клиенту остаётся один контакт, а нам — некого винить, кроме себя.' })}
             </Reveal>
             <Reveal as="p" className="about-intro__text" delay={0.15}>
-              {loc({ uk: 'Зараз будуємо приватні будинки й комерцію в Україні та за кордоном. Меблі робимо на власному виробництві, а на обʼєкт регулярно виїжджає той, хто його проєктував, — щоб на папері й у реальності було те саме.', en: 'Today we build private houses and commercial spaces in Ukraine and abroad. We make furniture in our own workshop, and whoever designed the project visits the site regularly — so paper and reality match.' })}
+              {loc({ uk: 'Зараз будуємо приватні будинки й комерцію в Україні та за кордоном. Меблі робимо на власному виробництві, а на обʼєкт регулярно виїжджає той, хто його проєктував, — щоб на папері й у реальності було те саме.', en: 'Today we build private houses and commercial spaces in Ukraine and abroad. We make furniture in our own workshop, and whoever designed the project visits the site regularly — so paper and reality match.', ru: 'Сейчас строим частные дома и коммерцию в Украине и за рубежом. Мебель делаем на собственном производстве, а на объект регулярно выезжает тот, кто его проектировал, — чтобы на бумаге и в реальности было одно и то же.' })}
             </Reveal>
           </div>
         </div>
@@ -73,7 +73,7 @@ export default function About() {
       {/* Values */}
       <section className="section section--alt">
         <div className="container">
-          <SectionHead kicker={loc({ uk: 'Цінності', en: 'Values' })} title={loc({ uk: 'Принципи, на яких будуємо', en: 'What we build on' })} align="center" />
+          <SectionHead kicker={loc({ uk: 'Цінності', en: 'Values', ru: 'Ценности' })} title={loc({ uk: 'Принципи, на яких будуємо', en: 'What we build on', ru: 'Принципы, на которых строим' })} align="center" />
           <ul className="values-grid">
             {values.map((v, i) => (
               <Reveal as="li" className="value-card" key={v.title.uk} delay={(i % 4) * 0.07}>
@@ -89,7 +89,7 @@ export default function About() {
       {/* Process */}
       <section className="section">
         <div className="container">
-          <SectionHead kicker={loc({ uk: 'Процес', en: 'Process' })} title={loc({ uk: 'Як ми працюємо', en: 'How we work' })} />
+          <SectionHead kicker={loc({ uk: 'Процес', en: 'Process', ru: 'Процесс' })} title={loc({ uk: 'Як ми працюємо', en: 'How we work', ru: 'Как мы работаем' })} />
           <ol className="process">
             {process.map((p, i) => (
               <Reveal as="li" className="process__item" key={p.step} delay={(i % 4) * 0.06}>
@@ -105,7 +105,7 @@ export default function About() {
       {/* Timeline */}
       <section className="section section--alt">
         <div className="container">
-          <SectionHead kicker={loc({ uk: 'Історія', en: 'History' })} title={loc({ uk: 'Шлях студії', en: 'The studio’s path' })} />
+          <SectionHead kicker={loc({ uk: 'Історія', en: 'History', ru: 'История' })} title={loc({ uk: 'Шлях студії', en: 'The studio’s path', ru: 'Путь студии' })} />
           <ol className="timeline">
             {timeline.map((m, i) => (
               <Reveal as="li" className="timeline__item" key={m.y} delay={(i % 5) * 0.05}>
@@ -123,7 +123,7 @@ export default function About() {
       {/* Press */}
       <section className="section">
         <div className="container">
-          <SectionHead kicker={loc({ uk: 'Преса', en: 'Press' })} title={loc({ uk: 'Про нас пишуть', en: 'As featured in' })} align="center" />
+          <SectionHead kicker={loc({ uk: 'Преса', en: 'Press', ru: 'Пресса' })} title={loc({ uk: 'Про нас пишуть', en: 'As featured in', ru: 'О нас пишут' })} align="center" />
           <ul className="press">
             {['DOM.RIA', 'Domus', 'AD Magazine', 'Building UA', 'Forbes'].map((p, i) => (
               <Reveal as="li" className="press__item" key={p} delay={(i % 5) * 0.05}>{p}</Reveal>

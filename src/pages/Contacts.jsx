@@ -10,13 +10,13 @@ export default function Contacts() {
   const { loc } = useLocale()
   return (
     <PageWrap>
-      <Seo title={loc({ uk: 'Контакти', en: 'Contacts' })} description={loc({ uk: 'Звʼяжіться зі студією Kasper: телефон, email, адреса у Києві. Відповідаємо протягом дня.', en: 'Get in touch with Kasper: phone, email, address in Kyiv. We reply within a day.' })} path="/contacts" />
+      <Seo title={loc({ uk: 'Контакти', en: 'Contacts', ru: 'Контакты' })} description={loc({ uk: 'Звʼяжіться зі студією Kasper: телефон, email, адреса. Відповідаємо протягом дня.', en: 'Get in touch with Kasper: phone, email, address. We reply within a day.', ru: 'Свяжитесь со студией Kasper: телефон, email, адрес. Отвечаем в течение дня.' })} path="/contacts" />
       <PageHero
-        kicker={loc({ uk: 'Контакти', en: 'Contacts' })}
-        title={loc({ uk: 'Поговорімо про ваш проєкт', en: 'Let’s talk about your project' })}
-        text={loc({ uk: 'Залиште заявку або звʼяжіться напряму — відповімо протягом одного робочого дня.', en: 'Leave a request or reach us directly — we’ll reply within one business day.' })}
+        kicker={loc({ uk: 'Контакти', en: 'Contacts', ru: 'Контакты' })}
+        title={loc({ uk: 'Поговорімо про ваш проєкт', en: 'Let’s talk about your project', ru: 'Поговорим о вашем проекте' })}
+        text={loc({ uk: 'Залиште заявку або звʼяжіться напряму — відповімо протягом одного робочого дня.', en: 'Leave a request or reach us directly — we’ll reply within one business day.', ru: 'Оставьте заявку или свяжитесь напрямую — ответим в течение одного рабочего дня.' })}
         image="/img/com-office1.jpg"
-        crumbs={[{ label: loc({ uk: 'Контакти', en: 'Contacts' }) }]}
+        crumbs={[{ label: loc({ uk: 'Контакти', en: 'Contacts', ru: 'Контакты' }) }]}
       />
 
       <section className="section">
@@ -24,19 +24,19 @@ export default function Contacts() {
           <div className="contacts__info">
             <ul className="contacts__list">
               <li className="contacts__item">
-                <span className="contacts__label">{loc({ uk: 'Телефон', en: 'Phone' })}</span>
+                <span className="contacts__label">{loc({ uk: 'Телефон', en: 'Phone', ru: 'Телефон' })}</span>
                 <a className="contacts__value" href={`tel:${contact.phone.replace(/\s/g, '')}`}>{contact.phone}</a>
               </li>
               <li className="contacts__item">
-                <span className="contacts__label">{loc({ uk: 'Пошта', en: 'Email' })}</span>
+                <span className="contacts__label">{loc({ uk: 'Пошта', en: 'Email', ru: 'Почта' })}</span>
                 <a className="contacts__value" href={`mailto:${contact.email}`}>{contact.email}</a>
               </li>
               <li className="contacts__item">
-                <span className="contacts__label">{loc({ uk: 'Адреса', en: 'Address' })}</span>
+                <span className="contacts__label">{loc({ uk: 'Адреса', en: 'Address', ru: 'Адрес' })}</span>
                 <a className="contacts__value" href={contact.addressUrl} target="_blank" rel="noopener noreferrer">{loc(contact.address)}</a>
               </li>
               <li className="contacts__item">
-                <span className="contacts__label">{loc({ uk: 'Графік', en: 'Hours' })}</span>
+                <span className="contacts__label">{loc({ uk: 'Графік', en: 'Hours', ru: 'Часы работы' })}</span>
                 <span className="contacts__value">{loc(contact.hours)}</span>
               </li>
             </ul>

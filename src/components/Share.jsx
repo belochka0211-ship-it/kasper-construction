@@ -6,7 +6,7 @@ import useLocale from '../hooks/useLocale'
  */
 export default function Share({ title }) {
   const { loc } = useLocale()
-  const shareLabel = loc({ uk: 'Поділитись', en: 'Share' })
+  const shareLabel = loc({ uk: 'Поділитись', en: 'Share', ru: 'Поделиться' })
   const url = typeof window !== 'undefined' ? window.location.href : ''
 
   const native = async () => {

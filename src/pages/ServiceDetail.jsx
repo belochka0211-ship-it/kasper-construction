@@ -13,9 +13,9 @@ import { getService, services } from '../data/services'
 import { projects } from '../data/projects'
 
 const packages = [
-  { name: { uk: 'Базовий', en: 'Basic' }, note: { uk: 'Окремий етап', en: 'Single stage' }, features: [{ uk: 'Один напрям робіт', en: 'One type of work' }, { uk: 'Кошторис і графік', en: 'Estimate and schedule' }, { uk: 'Звітність', en: 'Reporting' }] },
-  { name: { uk: 'Оптимальний', en: 'Standard' }, note: { uk: 'Найпопулярніший', en: 'Most popular' }, popular: true, features: [{ uk: 'Кілька напрямів', en: 'Several services' }, { uk: 'Управління проєктом', en: 'Project management' }, { uk: 'Технагляд', en: 'Supervision' }, { uk: 'Щотижневі звіти', en: 'Weekly reports' }] },
-  { name: { uk: 'Преміум', en: 'Premium' }, note: { uk: 'Під ключ', en: 'Turnkey' }, features: [{ uk: 'Повний цикл', en: 'Full cycle' }, { uk: 'Дизайн + виробництво', en: 'Design + manufacturing' }, { uk: 'Авторський нагляд', en: 'Designer supervision' }, { uk: 'Гарантія 5 років', en: '5-year warranty' }] },
+  { name: { uk: 'Базовий', en: 'Basic', ru: 'Базовый' }, note: { uk: 'Окремий етап', en: 'Single stage', ru: 'Отдельный этап' }, features: [{ uk: 'Один напрям робіт', en: 'One type of work', ru: 'Одно направление работ' }, { uk: 'Кошторис і графік', en: 'Estimate and schedule', ru: 'Смета и график' }, { uk: 'Звітність', en: 'Reporting', ru: 'Отчётность' }] },
+  { name: { uk: 'Оптимальний', en: 'Standard', ru: 'Оптимальный' }, note: { uk: 'Найпопулярніший', en: 'Most popular', ru: 'Самый популярный' }, popular: true, features: [{ uk: 'Кілька напрямів', en: 'Several services', ru: 'Несколько направлений' }, { uk: 'Управління проєктом', en: 'Project management', ru: 'Управление проектом' }, { uk: 'Технагляд', en: 'Supervision', ru: 'Технадзор' }, { uk: 'Щотижневі звіти', en: 'Weekly reports', ru: 'Еженедельные отчёты' }] },
+  { name: { uk: 'Преміум', en: 'Premium', ru: 'Премиум' }, note: { uk: 'Під ключ', en: 'Turnkey', ru: 'Под ключ' }, features: [{ uk: 'Повний цикл', en: 'Full cycle', ru: 'Полный цикл' }, { uk: 'Дизайн + виробництво', en: 'Design + manufacturing', ru: 'Дизайн + производство' }, { uk: 'Авторський нагляд', en: 'Designer supervision', ru: 'Авторский надзор' }, { uk: 'Гарантія 5 років', en: '5-year warranty', ru: 'Гарантия 5 лет' }] },
 ]
 
 export default function ServiceDetail() {
@@ -38,7 +38,7 @@ export default function ServiceDetail() {
         jsonLd={{ '@context': 'https://schema.org', '@type': 'Service', name: service.title, description: service.excerpt, provider: { '@type': 'Organization', name: 'Kasper' } }}
       />
       <PageHero
-        kicker={loc({ uk: 'Послуга', en: 'Service' })}
+        kicker={loc({ uk: 'Послуга', en: 'Service', ru: 'Услуга' })}
         title={service.title}
         text={service.excerpt}
         image={service.image}
@@ -69,10 +69,10 @@ export default function ServiceDetail() {
               {service.priceFrom && (
                 <>
                   <div className="detail__price">
-                    <span className="detail__price-label">{loc({ uk: 'Вартість', en: 'Cost' })}</span>
+                    <span className="detail__price-label">{loc({ uk: 'Вартість', en: 'Cost', ru: 'Стоимость' })}</span>
                     <span className="detail__price-value">{service.priceFrom}</span>
                   </div>
-                  <p className="detail__price-note">{loc({ uk: 'Ціни вказані для України. Для країн Європи вартість може бути вищою.', en: 'Prices are for Ukraine. For European countries the cost may be higher.' })}</p>
+                  <p className="detail__price-note">{loc({ uk: 'Ціни вказані для України. Для країн Європи вартість може бути вищою.', en: 'Prices are for Ukraine. For European countries the cost may be higher.', ru: 'Цены указаны для Украины. Для стран Европы стоимость может быть выше.' })}</p>
                 </>
               )}
               <h3 className="detail__card-title">{t('labels.included')}</h3>
@@ -92,11 +92,11 @@ export default function ServiceDetail() {
       {/* Packages */}
       <section className="section section--alt">
         <div className="container">
-          <SectionHead kicker={loc({ uk: 'Пакети', en: 'Packages' })} title={loc({ uk: 'Оберіть формат', en: 'Pick a format' })} align="center" />
+          <SectionHead kicker={loc({ uk: 'Пакети', en: 'Packages', ru: 'Пакеты' })} title={loc({ uk: 'Оберіть формат', en: 'Pick a format', ru: 'Выберите формат' })} align="center" />
           <ul className="packages">
             {loc(packages).map((p, i) => (
               <Reveal as="li" className={`package${p.popular ? ' package--popular' : ''}`} key={p.name} delay={(i % 3) * 0.08}>
-                {p.popular && <span className="package__badge">{loc({ uk: 'Популярний', en: 'Popular' })}</span>}
+                {p.popular && <span className="package__badge">{loc({ uk: 'Популярний', en: 'Popular', ru: 'Популярный' })}</span>}
                 <span className="package__note">{p.note}</span>
                 <h3 className="package__name">{p.name}</h3>
                 <ul className="package__list">
@@ -104,7 +104,7 @@ export default function ServiceDetail() {
                     <li className="package__item" key={f}><span className="package__check" aria-hidden="true">✓</span>{f}</li>
                   ))}
                 </ul>
-                <Link className={`btn ${p.popular ? 'btn--accent' : 'btn--outline'} btn--block`} to="/contacts">{loc({ uk: 'Обрати', en: 'Choose' })}</Link>
+                <Link className={`btn ${p.popular ? 'btn--accent' : 'btn--outline'} btn--block`} to="/contacts">{loc({ uk: 'Обрати', en: 'Choose', ru: 'Выбрать' })}</Link>
               </Reveal>
             ))}
           </ul>
@@ -114,7 +114,7 @@ export default function ServiceDetail() {
       {/* Related projects */}
       <section className="section">
         <div className="container">
-          <SectionHead kicker={loc({ uk: 'Реалізації', en: 'In practice' })} title={loc({ uk: 'Проєкти з цією послугою', en: 'Projects with this service' })} />
+          <SectionHead kicker={loc({ uk: 'Реалізації', en: 'In practice', ru: 'Реализации' })} title={loc({ uk: 'Проєкти з цією послугою', en: 'Projects with this service', ru: 'Проекты с этой услугой' })} />
           <ul className="projects-grid">
             {loc(projects).slice(0, 3).map((p) => <ProjectCard key={p.slug} project={p} />)}
           </ul>

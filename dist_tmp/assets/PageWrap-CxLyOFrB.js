@@ -1,0 +1,1 @@
+import{j as t,m as o}from"./index-C-Igwh-r.js";function n({children:a,className:i=""}){return t.jsx(o.div,{className:`page ${i}`.trim(),initial:{opacity:0,y:18},animate:{opacity:1,y:0},exit:{opacity:0,y:-12},transition:{duration:.5,ease:[.16,1,.3,1]},children:a})}export{n as P};

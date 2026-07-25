@@ -18,11 +18,11 @@ export default function Journal() {
 
   return (
     <PageWrap>
-      <Seo title={loc({ uk: 'Журнал', en: 'Journal' })} description={loc({ uk: 'Думки та інсайти про будівництво, дизайн і управління проєктами від студії Kasper.', en: 'Thoughts and insights on construction, design and project management from Kasper.' })} path="/journal" />
+      <Seo title={loc({ uk: 'Журнал', en: 'Journal', ru: 'Журнал' })} description={loc({ uk: 'Думки та інсайти про будівництво, дизайн і управління проєктами від студії Kasper.', en: 'Thoughts and insights on construction, design and project management from Kasper.', ru: 'Мысли и инсайты о строительстве, дизайне и управлении проектами от студии Kasper.' })} path="/journal" />
       <PageHero
         kicker={t('sections.journalKicker')}
-        title={loc({ uk: 'Думки та інсайти', en: 'Thoughts & insights' })}
-        text={loc({ uk: 'Як ми будуємо, проєктуємо та контролюємо якість — без води, по суті.', en: 'How we build, design and control quality — no fluff, straight to the point.' })}
+        title={loc({ uk: 'Думки та інсайти', en: 'Thoughts & insights', ru: 'Мысли и инсайты' })}
+        text={loc({ uk: 'Як ми будуємо, проєктуємо та контролюємо якість — без води, по суті.', en: 'How we build, design and control quality — no fluff, straight to the point.', ru: 'Как мы строим, проектируем и контролируем качество — без воды, по существу.' })}
         image="/img/int-3.jpg"
         crumbs={[{ label: t('nav.journal') }]}
       />
