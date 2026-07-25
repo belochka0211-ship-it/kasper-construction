@@ -4,11 +4,11 @@ export const testimonials = [
   {
     quote: {
       uk: 'Будували нам будинок під Києвом майже рік. Пару разів зміщували строки через погоду, але попереджали заздалегідь — і в кошторис уклались, що для мене було головним.',
-      en: 'They built our house near Kyiv for almost a year. Twice the timeline shifted because of weather, but they warned us in advance — and they stayed within budget, which mattered most to me.',
+      en: 'They built our house near Málaga for almost a year. Twice the timeline shifted because of weather, but they warned us in advance — and they stayed within budget, which mattered most to me.',
       ru: 'Строили нам дом под Киевом почти год. Пару раз сдвигали сроки из-за погоды, но предупреждали заранее — и в смету уложились, что для меня было главным.',
     },
     name: { uk: 'Олена Кравець', en: 'Olena Kravets', ru: 'Елена Кравец' },
-    role: { uk: 'Будинок, Козин', en: 'House, Kozyn', ru: 'Дом, Козин' },
+    role: { uk: 'Будинок, Марбелья', en: 'House, Marbella', ru: 'Дом, Марбелья' },
     photo: ph('1544005313-94ddf0286df2'),
   },
   {
@@ -18,7 +18,7 @@ export const testimonials = [
       ru: 'Больше всего понравилось, что каждый понедельник приходил отчёт с фото с объекта. Я видел, на что идут деньги, и не должен был звонить прорабу каждый день.',
     },
     name: { uk: 'Андрій Мельник', en: 'Andrii Melnyk', ru: 'Андрей Мельник' },
-    role: { uk: 'Офіс компанії, Поділ', en: 'Company office, Podil', ru: 'Офис компании, Подол' },
+    role: { uk: 'Офіс компанії, Мадрид', en: 'Company office, Madrid', ru: 'Офис компании, Мадрид' },
     photo: ph('1507003211169-0a1dd7228f2d'),
   },
   {

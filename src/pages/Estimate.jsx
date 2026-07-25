@@ -98,7 +98,7 @@ export default function Estimate() {
             </div>
             <span className="estimate__per">≈ {fmt(estimate.perM)}/{m2} · {area} {m2}</span>
             <p className="estimate__note">
-              {loc({ uk: 'Ціни вказані для України. Для країн Європи вартість може бути вищою. Це попередня оцінка для планування — фіксований кошторис складаємо після зустрічі.', en: 'Prices are for Ukraine. For European countries the cost may be higher. This is a rough figure for planning — we prepare a fixed estimate after a meeting.', ru: 'Цены указаны для Украины. Для стран Европы стоимость может быть выше. Это предварительная оценка для планирования — фиксированную смету составляем после встречи.' })}
+              {loc({ uk: 'Ціни орієнтовні для планування. Точну вартість погоджуємо індивідуально залежно від країни та обʼєкта — фіксований кошторис складаємо після зустрічі.', en: 'Prices are indicative for planning purposes. The exact cost is agreed individually depending on the country and project — we prepare a fixed estimate after a meeting.', ru: 'Цены ориентировочные для планирования. Точную стоимость согласуем индивидуально в зависимости от страны и объекта — фиксированную смету составляем после встречи.' })}
             </p>
             <Link className="btn btn--accent btn--block btn--lg" to="/contacts">{loc({ uk: 'Отримати точний кошторис', en: 'Get an exact estimate', ru: 'Получить точную смету' })}</Link>
           </Reveal>

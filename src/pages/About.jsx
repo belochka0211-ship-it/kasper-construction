@@ -26,11 +26,11 @@ const process = [
 ]
 
 const timeline = [
-  { y: '2012', t: { uk: 'Заснування', en: 'Founded', ru: 'Основание' }, d: { uk: 'Kasper починає з ремонтів квартир у Києві.', en: 'Kasper starts out doing apartment renovations in Kyiv.', ru: 'Kasper начинает с ремонтов квартир в Киеве.' } },
+  { y: '2012', t: { uk: 'Заснування', en: 'Founded', ru: 'Основание' }, d: { uk: 'Kasper починає з ремонтів квартир у Малазі.', en: 'Kasper starts out doing apartment renovations in Málaga.', ru: 'Kasper начинает с ремонтов квартир в Малаге.' } },
   { y: '2015', t: { uk: 'Перші обʼєкти під ключ', en: 'First turnkey projects', ru: 'Первые объекты под ключ' }, d: { uk: 'Переходимо до повного циклу будівництва.', en: 'We move to full-cycle construction.', ru: 'Переходим к полному циклу строительства.' } },
   { y: '2018', t: { uk: 'Власне виробництво', en: 'Own workshop', ru: 'Собственное производство' }, d: { uk: 'Запускаємо цех корпусних і мʼяких меблів.', en: 'We open a workshop for cabinetry and upholstery.', ru: 'Запускаем цех корпусной и мягкой мебели.' } },
   { y: '2021', t: { uk: 'Комерційні простори', en: 'Commercial spaces', ru: 'Коммерческие пространства' }, d: { uk: 'Офіси, готелі та шоуруми у портфоліо.', en: 'Offices, hotels and showrooms join the portfolio.', ru: 'Офисы, отели и шоурумы в портфолио.' } },
-  { y: '2024', t: { uk: '700+ проєктів', en: '700+ projects', ru: '700+ проектов' }, d: { uk: 'Працюємо в Україні та Європі, команда 64 людини.', en: 'Working across Ukraine and Europe, a team of 64.', ru: 'Работаем в Украине и Европе, команда 64 человека.' } },
+  { y: '2024', t: { uk: '700+ проєктів', en: '700+ projects', ru: '700+ проектов' }, d: { uk: 'Працюємо в Іспанії та Європі, команда 64 людини.', en: 'Working across Spain and Europe, a team of 64.', ru: 'Работаем в Испании и Европе, команда 64 человека.' } },
 ]
 
 export default function About() {
@@ -62,7 +62,7 @@ export default function About() {
               {loc({ uk: 'Почали у 2012-му з ремонтів квартир. Швидко набридло, що проєктувальники кивають на будівельників, а ті — на постачальників, тож зібрали всіх під один дах. Так клієнту лишається один контакт, а нам — нікого звинувачувати, крім себе.', en: 'We started in 2012 with apartment renovations. We quickly got tired of designers blaming builders and builders blaming suppliers, so we put everyone under one roof. That leaves the client with one contact — and us with no one to blame but ourselves.', ru: 'Начали в 2012-м с ремонтов квартир. Быстро надоело, что проектировщики кивают на строителей, а те — на поставщиков, поэтому собрали всех под одной крышей. Так клиенту остаётся один контакт, а нам — некого винить, кроме себя.' })}
             </Reveal>
             <Reveal as="p" className="about-intro__text" delay={0.15}>
-              {loc({ uk: 'Зараз будуємо приватні будинки й комерцію в Україні та за кордоном. Меблі робимо на власному виробництві, а на обʼєкт регулярно виїжджає той, хто його проєктував, — щоб на папері й у реальності було те саме.', en: 'Today we build private houses and commercial spaces in Ukraine and abroad. We make furniture in our own workshop, and whoever designed the project visits the site regularly — so paper and reality match.', ru: 'Сейчас строим частные дома и коммерцию в Украине и за рубежом. Мебель делаем на собственном производстве, а на объект регулярно выезжает тот, кто его проектировал, — чтобы на бумаге и в реальности было одно и то же.' })}
+              {loc({ uk: 'Зараз будуємо приватні будинки й комерцію в Іспанії та за кордоном. Меблі робимо на власному виробництві, а на обʼєкт регулярно виїжджає той, хто його проєктував, — щоб на папері й у реальності було те саме.', en: 'Today we build private houses and commercial spaces in Spain and abroad. We make furniture in our own workshop, and whoever designed the project visits the site regularly — so paper and reality match.', ru: 'Сейчас строим частные дома и коммерцию в Испании и за рубежом. Мебель делаем на собственном производстве, а на объект регулярно выезжает тот, кто его проектировал, — чтобы на бумаге и в реальности было одно и то же.' })}
             </Reveal>
           </div>
         </div>

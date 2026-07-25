@@ -52,7 +52,7 @@ export const clients = [
 
 export const home = {
   hero: {
-    kicker: { uk: 'Будівельна студія повного циклу · Київ', en: 'Full-cycle construction studio · Kyiv', ru: 'Строительная студия полного цикла · Киев' },
+    kicker: { uk: 'Будівельна студія повного циклу · Малага', en: 'Full-cycle construction studio · Málaga', ru: 'Строительная студия полного цикла · Малага' },
     title: {
       uk: ['Організація, управління', 'та нагляд за будівництвом'],
       en: ['Planning, management', 'and supervision of construction'],

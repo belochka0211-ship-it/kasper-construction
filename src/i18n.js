@@ -7,7 +7,7 @@ const resources = {
   uk: {
     translation: {
       nav: { home: 'Головна', about: 'Про нас', services: 'Послуги', projects: 'Проєкти', team: 'Команда', journal: 'Журнал', estimate: 'Калькулятор', contacts: 'Контакти' },
-      footer: { guarantees: 'Гарантії', privacy: 'Конфіденційність', cookies: 'Cookie', legal: 'Правова інформація', rights: 'Усі права захищені.', tagline: 'Будівництво та інтерʼєри під ключ. Київ · з {{year}} року.' },
+      footer: { guarantees: 'Гарантії', privacy: 'Конфіденційність', cookies: 'Cookie', legal: 'Правова інформація', rights: 'Усі права захищені.', tagline: 'Будівництво та інтерʼєри під ключ. Малага · з {{year}} року.' },
       cta: {
         discuss: 'Обговорити проєкт', start: 'Почати проєкт', works: 'Дивитись роботи',
         allServices: 'Усі послуги', allProjects: 'Усі проєкти', aboutStudio: 'Про студію',
@@ -43,7 +43,7 @@ const resources = {
   en: {
     translation: {
       nav: { home: 'Home', about: 'About', services: 'Services', projects: 'Projects', team: 'Team', journal: 'Journal', estimate: 'Estimate', contacts: 'Contacts' },
-      footer: { guarantees: 'Guarantees', privacy: 'Privacy', cookies: 'Cookies', legal: 'Legal', rights: 'All rights reserved.', tagline: 'Construction and interiors, turnkey. Kyiv · since {{year}}.' },
+      footer: { guarantees: 'Guarantees', privacy: 'Privacy', cookies: 'Cookies', legal: 'Legal', rights: 'All rights reserved.', tagline: 'Construction and interiors, turnkey. Málaga · since {{year}}.' },
       cta: {
         discuss: 'Discuss a project', start: 'Start a project', works: 'View work',
         allServices: 'All services', allProjects: 'All projects', aboutStudio: 'About the studio',
@@ -79,7 +79,7 @@ const resources = {
   ru: {
     translation: {
       nav: { home: 'Главная', about: 'О нас', services: 'Услуги', projects: 'Проекты', team: 'Команда', journal: 'Журнал', estimate: 'Калькулятор', contacts: 'Контакты' },
-      footer: { guarantees: 'Гарантии', privacy: 'Конфиденциальность', cookies: 'Cookie', legal: 'Правовая информация', rights: 'Все права защищены.', tagline: 'Строительство и интерьеры под ключ. Киев · с {{year}} года.' },
+      footer: { guarantees: 'Гарантии', privacy: 'Конфиденциальность', cookies: 'Cookie', legal: 'Правовая информация', rights: 'Все права защищены.', tagline: 'Строительство и интерьеры под ключ. Малага · с {{year}} года.' },
       cta: {
         discuss: 'Обсудить проект', start: 'Начать проект', works: 'Смотреть работы',
         allServices: 'Все услуги', allProjects: 'Все проекты', aboutStudio: 'О студии',

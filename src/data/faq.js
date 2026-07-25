@@ -32,11 +32,11 @@ export const faq = [
     },
   },
   {
-    q: { uk: 'Працюєте за межами Києва?', en: 'Do you work outside Kyiv?', ru: 'Работаете за пределами Киева?' },
+    q: { uk: 'Працюєте за межами Малаги?', en: 'Do you work outside Málaga?', ru: 'Работаете за пределами Малаги?' },
     a: {
-      uk: 'Так — були обʼєкти і в області, і у Львівській, і за кордоном. Якщо ділянка далеко, логістику й нагляд беремо на себе, це вже закладено в роботу.',
-      en: 'Yes — we’ve had projects in the region, in Lviv oblast and abroad. If the site is far, logistics and supervision are on us; that’s already built into how we work.',
-      ru: 'Да — были объекты и в области, и во Львовской, и за границей. Если участок далеко, логистику и надзор берём на себя, это уже заложено в работу.',
+      uk: 'Так — були обʼєкти і в інших регіонах Іспанії, і за кордоном. Якщо ділянка далеко, логістику й нагляд беремо на себе, це вже закладено в роботу.',
+      en: 'Yes — we’ve had projects in other regions of Spain and abroad. If the site is far, logistics and supervision are on us; that’s already built into how we work.',
+      ru: 'Да — были объекты и в других регионах Испании, и за границей. Если участок далеко, логистику и надзор берём на себя, это уже заложено в работу.',
     },
   },
 ]

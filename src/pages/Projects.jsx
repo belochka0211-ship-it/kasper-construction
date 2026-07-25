@@ -23,11 +23,11 @@ export default function Projects() {
 
   return (
     <PageWrap>
-      <Seo title={loc({ uk: 'Проєкти', en: 'Projects', ru: 'Проекты' })} description={loc({ uk: 'Приватні резиденції та комерційні обʼєкти в Україні та Європі — портфоліо студії Kasper.', en: 'Private residences and commercial spaces in Ukraine and Europe — the Kasper portfolio.', ru: 'Частные резиденции и коммерческие объекты в Украине и Европе — портфолио студии Kasper.' })} path="/projects" />
+      <Seo title={loc({ uk: 'Проєкти', en: 'Projects', ru: 'Проекты' })} description={loc({ uk: 'Приватні резиденції та комерційні обʼєкти в Іспанії та Європі — портфоліо студії Kasper.', en: 'Private residences and commercial spaces in Spain and across Europe — the Kasper portfolio.', ru: 'Частные резиденции и коммерческие объекты в Испании и Европе — портфолио студии Kasper.' })} path="/projects" />
       <PageHero
         kicker={loc({ uk: 'Портфоліо', en: 'Portfolio', ru: 'Портфолио' })}
         title={loc({ uk: 'Проєкти, якими пишаємось', en: 'Projects we’re proud of', ru: 'Проекты, которыми гордимся' })}
-        text={loc({ uk: 'Приватні резиденції та комерційні обʼєкти в Україні та Європі.', en: 'Private residences and commercial spaces in Ukraine and Europe.', ru: 'Частные резиденции и коммерческие объекты в Украине и Европе.' })}
+        text={loc({ uk: 'Приватні резиденції та комерційні обʼєкти в Іспанії та Європі.', en: 'Private residences and commercial spaces in Spain and across Europe.', ru: 'Частные резиденции и коммерческие объекты в Испании и Европе.' })}
         image="/img/hero-construction.jpg"
         crumbs={[{ label: loc({ uk: 'Проєкти', en: 'Projects', ru: 'Проекты' }) }]}
       />

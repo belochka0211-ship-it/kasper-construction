@@ -72,7 +72,7 @@ export default function ServiceDetail() {
                     <span className="detail__price-label">{loc({ uk: 'Вартість', en: 'Cost', ru: 'Стоимость' })}</span>
                     <span className="detail__price-value">{service.priceFrom}</span>
                   </div>
-                  <p className="detail__price-note">{loc({ uk: 'Ціни вказані для України. Для країн Європи вартість може бути вищою.', en: 'Prices are for Ukraine. For European countries the cost may be higher.', ru: 'Цены указаны для Украины. Для стран Европы стоимость может быть выше.' })}</p>
+                  <p className="detail__price-note">{loc({ uk: 'Ціни орієнтовні. Точну вартість погоджуємо індивідуально залежно від країни та обʼєкта.', en: 'Prices are indicative. The exact cost is agreed individually depending on the country and project.', ru: 'Цены ориентировочные. Точную стоимость согласуем индивидуально в зависимости от страны и объекта.' })}</p>
                 </>
               )}
               <h3 className="detail__card-title">{t('labels.included')}</h3>
