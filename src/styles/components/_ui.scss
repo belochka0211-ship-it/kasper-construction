@@ -83,7 +83,6 @@
 }
 
 // ── Custom cursor ───────────────────────────────────────────────
-.has-cursor { @media (pointer: fine) { cursor: none; a, button { cursor: none; } } }
 .cursor__arrow {
   position: fixed;
   top: 0; left: 0;
@@ -116,7 +115,7 @@
 .lang-toggle {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
+  gap: 8px;
   font-size: 0.82rem;
   font-weight: 600;
   letter-spacing: 0.04em;

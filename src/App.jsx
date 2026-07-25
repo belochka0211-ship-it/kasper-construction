@@ -6,7 +6,6 @@ import Layout from './layout/Layout'
 import ScrollToTop from './layout/ScrollToTop'
 import ErrorBoundary from './components/ErrorBoundary'
 import Loader from './components/Loader'
-import Cursor from './components/Cursor'
 import Grain from './components/Grain'
 import BlueprintGrid from './components/BlueprintGrid'
 import CookieConsent from './components/CookieConsent'
@@ -37,7 +36,6 @@ export default function App() {
       <Loader />
       <BlueprintGrid />
       <Grain />
-      <Cursor />
       <a className="skip-link" href="#main">Перейти до контенту</a>
 
       <Layout>
