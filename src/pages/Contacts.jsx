@@ -13,7 +13,7 @@ export default function Contacts() {
       <Seo title={loc({ uk: 'Контакти', en: 'Contacts', ru: 'Контакты' })} description={loc({ uk: 'Звʼяжіться зі студією Kasper: телефон, email, адреса. Відповідаємо протягом дня.', en: 'Get in touch with Kasper: phone, email, address. We reply within a day.', ru: 'Свяжитесь со студией Kasper: телефон, email, адрес. Отвечаем в течение дня.' })} path="/contacts" />
       <PageHero
         kicker={loc({ uk: 'Контакти', en: 'Contacts', ru: 'Контакты' })}
-        title={loc({ uk: 'Поговорімо про ваш проєкт', en: 'Let’s talk about your project', ru: 'Поговорим о вашем проекте' })}
+        title={loc({ uk: 'Поговоримо про ваш проєкт', en: 'Let’s talk about your project', ru: 'Поговорим о вашем проекте' })}
         text={loc({ uk: 'Залиште заявку або звʼяжіться напряму — відповімо протягом одного робочого дня.', en: 'Leave a request or reach us directly — we’ll reply within one business day.', ru: 'Оставьте заявку или свяжитесь напрямую — ответим в течение одного рабочего дня.' })}
         image="/img/com-office1.jpg"
         crumbs={[{ label: loc({ uk: 'Контакти', en: 'Contacts', ru: 'Контакты' }) }]}
