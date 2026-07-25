@@ -167,6 +167,34 @@ export const services = [
       { step: { uk: 'Сервіс', en: 'Service', ru: 'Сервис' }, text: { uk: 'Гарантія та обслуговування.', en: 'Warranty and servicing.', ru: 'Гарантия и обслуживание.' } },
     ],
   },
+  {
+    slug: 'procurement',
+    priceFrom: { uk: 'фіксована ставка + 10% від вартості комплектації', en: 'fixed fee + 10% of furnishing cost', ru: 'фиксированная ставка + 10% от стоимости комплектации' },
+    title: { uk: 'Комплектація обʼєктів', en: 'Furnishing & procurement', ru: 'Комплектация объектов' },
+    excerpt: {
+      uk: 'Закупівля меблів, оздоблення, світла та декору за готовим дизайн-проєктом — в одні руки.',
+      en: 'Sourcing furniture, finishes, lighting and decor to a finished design project — handled end to end.',
+      ru: 'Закупка мебели, отделки, света и декора по готовому дизайн-проекту — в одни руки.',
+    },
+    image: '/img/int-4.jpg',
+    intro: {
+      uk: 'Беремо на себе комплектацію інтерʼєру за вже готовим дизайн-проєктом: підбираємо й закуповуємо оздоблювальні матеріали, меблі, світло, текстиль та обладнання, контролюємо строки поставок і приймаємо товар на обʼєкті. Прямі контракти з постачальниками дають доступ до партнерських умов закупівлі.',
+      en: 'We handle furnishing for an already-finished design project: sourcing and buying finishes, furniture, lighting, textiles and equipment, tracking delivery dates, and accepting goods on site. Direct supplier contracts give access to partner pricing.',
+      ru: 'Берём на себя комплектацию интерьера по уже готовому дизайн-проекту: подбираем и закупаем отделочные материалы, мебель, свет, текстиль и оборудование, контролируем сроки поставок и принимаем товар на объекте. Прямые контракты с поставщиками дают доступ к партнёрским условиям закупки.',
+    },
+    deliverables: [
+      { uk: 'Підбір і закупівля оздоблення за відомостями проєкту', en: 'Sourcing and buying finishes per project specs', ru: 'Подбор и закупка отделки по ведомостям проекта' },
+      { uk: 'Серійні та меблі на замовлення', en: 'Off-the-shelf and custom-made furniture', ru: 'Серийная и мебель на заказ' },
+      { uk: 'Текстиль, декор і світлотехніка', en: 'Textiles, decor and lighting', ru: 'Текстиль, декор и светотехника' },
+      { uk: 'Контроль поставок і приймання на обʼєкті', en: 'Delivery tracking and on-site acceptance', ru: 'Контроль поставок и приёмка на объекте' },
+    ],
+    process: [
+      { step: { uk: 'Специфікація', en: 'Specification', ru: 'Спецификация' }, text: { uk: 'Беремо відомості матеріалів і меблів з проєкту.', en: 'We take the material and furniture schedules from the project.', ru: 'Берём ведомости материалов и мебели из проекта.' } },
+      { step: { uk: 'Підбір і КП', en: 'Sourcing & quotes', ru: 'Подбор и КП' }, text: { uk: 'Підбираємо позиції в партнерів, готуємо кошторис закупівлі.', en: 'We source items from partners and prepare a procurement budget.', ru: 'Подбираем позиции у партнёров, готовим смету закупки.' } },
+      { step: { uk: 'Замовлення', en: 'Ordering', ru: 'Заказ' }, text: { uk: 'Розміщуємо замовлення, ведемо строки та якість.', en: 'We place orders and track deadlines and quality.', ru: 'Размещаем заказы, ведём сроки и качество.' } },
+      { step: { uk: 'Приймання', en: 'Acceptance', ru: 'Приёмка' }, text: { uk: 'Приймаємо на обʼєкті й передаємо в монтаж.', en: 'We accept goods on site and hand them to installation.', ru: 'Принимаем на объекте и передаём в монтаж.' } },
+    ],
+  },
 ]
 
 export const getService = (slug) => services.find((s) => s.slug === slug)

@@ -24,7 +24,7 @@ export default function Services() {
       <PageHero
         kicker={loc({ uk: 'Послуги', en: 'Services', ru: 'Услуги' })}
         title={loc({ uk: 'Повний цикл — від ідеї до ключів', en: 'The full cycle — from idea to keys', ru: 'Полный цикл — от идеи до ключей' })}
-        text={loc({ uk: 'Шість напрямів, які можна замовити окремо або як комплекс під ключ.', en: 'Six services you can order on their own or as a full turnkey package.', ru: 'Шесть направлений, которые можно заказать отдельно или как комплекс под ключ.' })}
+        text={loc({ uk: 'Сім напрямів, які можна замовити окремо або як комплекс під ключ.', en: 'Seven services you can order on their own or as a full turnkey package.', ru: 'Семь направлений, которые можно заказать отдельно или как комплекс под ключ.' })}
         image="/img/hero-build.jpg"
         crumbs={[{ label: loc({ uk: 'Послуги', en: 'Services', ru: 'Услуги' }) }]}
       />

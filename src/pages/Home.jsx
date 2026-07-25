@@ -51,7 +51,7 @@ export default function Home() {
             <SectionHead
               kicker={loc({ uk: 'Що ми робимо', en: 'What we do', ru: 'Что мы делаем' })}
               title={loc({ uk: 'Послуги повного циклу', en: 'Full-cycle services', ru: 'Услуги полного цикла' })}
-              lead={loc({ uk: 'Шість напрямів, що закривають весь шлях обʼєкта — від ідеї до експлуатації.', en: 'Six services covering the whole journey — from idea to a working building.', ru: 'Шесть направлений, покрывающих весь путь объекта — от идеи до эксплуатации.' })}
+              lead={loc({ uk: 'Сім напрямів, що закривають весь шлях обʼєкта — від ідеї до експлуатації.', en: 'Seven services covering the whole journey — from idea to a working building.', ru: 'Семь направлений, покрывающих весь путь объекта — от идеи до эксплуатации.' })}
             />
             <Reveal className="section__top-link">
               <Link className="link-arrow" to="/services">{t('cta.allServices')} <span aria-hidden="true">→</span></Link>
