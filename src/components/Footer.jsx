@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import useLocale from '../hooks/useLocale'
 import { brand, nav, contact } from '../data/site'
+import SocialIcon from './SocialIcon'
 
 export default function Footer() {
   const { t } = useTranslation()
@@ -33,7 +34,7 @@ export default function Footer() {
           <a className="footer__contact footer__contact--muted" href={contact.addressUrl} target="_blank" rel="noopener noreferrer">{loc(contact.address)}</a>
           <div className="footer__socials">
             {contact.socials.map((s) => (
-              <a key={s.label} className="footer__social" href={s.href} aria-label={s.label}>{s.short}</a>
+              <a key={s.label} className="footer__social" href={s.href} aria-label={s.label}><SocialIcon label={s.label} /></a>
             ))}
           </div>
         </div>

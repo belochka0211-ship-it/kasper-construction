@@ -71,6 +71,7 @@
     color: $ink;
     transition: background $dur $ease-soft, color $dur $ease-soft, transform $dur $ease-out;
     &:hover { background: $accent; color: $on-accent; border-color: transparent; transform: translateY(-3px); }
+    svg { width: 18px; height: 18px; }
   }
 
   &__bottom {
