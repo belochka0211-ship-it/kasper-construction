@@ -121,6 +121,7 @@
   letter-spacing: 0.04em;
   color: $muted;
   &__opt {
+    display: inline-block;
     background: none;
     border: none;
     padding: 0;
@@ -128,11 +129,11 @@
     letter-spacing: inherit;
     color: inherit;
     cursor: pointer;
-    transition: color $dur $ease-soft;
+    transition: color $dur $ease-soft, transform $dur $ease-out;
+    &:hover { color: $accent; transform: scale(1.15); }
     &--active { color: $ink; }
   }
   &__sep { color: rgba($ink, 0.3); }
-  &:hover .lang-toggle__opt { color: $ink; }
 }
 
 // ── Cookie banner ───────────────────────────────────────────────
