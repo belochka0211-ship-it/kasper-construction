@@ -40,7 +40,7 @@ export default function Header() {
           {brand.name}<span className="header__logo-dot">.</span>
         </Link>
 
-        <nav ref={navRef} className={`header__nav${open ? ' header__nav--open' : ''}`} aria-label="Головна навігація">
+        <nav ref={navRef} className={`header__nav${open ? ' header__nav--open' : ''}`} aria-label="Main navigation">
           <ul className="header__list">
             {nav.map((item) => (
               <li key={item.to} className="header__item">

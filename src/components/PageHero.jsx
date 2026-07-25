@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 import Img from './Img'
 
 /**
  * Cinematic inner-page header: dark image, glow, kicker + serif title + crumbs.
  */
 export default function PageHero({ kicker, title, text, image, crumbs = [] }) {
+  const { t } = useTranslation()
   return (
     <section className="page-hero">
       <div className="page-hero__media">
@@ -16,8 +18,8 @@ export default function PageHero({ kicker, title, text, image, crumbs = [] }) {
 
       <div className="container page-hero__inner">
         {crumbs.length > 0 && (
-          <nav className="crumbs" aria-label="Хлібні крихти">
-            <Link className="crumbs__link" to="/">Головна</Link>
+          <nav className="crumbs" aria-label="Breadcrumbs">
+            <Link className="crumbs__link" to="/">{t('labels.crumbHome')}</Link>
             {crumbs.map((c) => (
               <span className="crumbs__part" key={c.label}>
                 <span className="crumbs__sep">/</span>
@@ -27,6 +29,7 @@ export default function PageHero({ kicker, title, text, image, crumbs = [] }) {
             ))}
           </nav>
         )}
+
 
         {kicker && (
           <motion.span
