@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://forma.ua/sitemap.xml
