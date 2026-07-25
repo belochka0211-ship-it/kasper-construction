@@ -32,9 +32,10 @@ export const contact = {
   },
   socials: [
     { label: 'Instagram', short: 'IG', href: '#' },
-    { label: 'Facebook', short: 'FB', href: '#' },
-    { label: 'Behance', short: 'Be', href: '#' },
-    { label: 'LinkedIn', short: 'In', href: '#' },
+    { label: 'Telegram', short: 'TG', href: '#' },
+    { label: 'Pinterest', short: 'Pi', href: '#' },
+    { label: 'TikTok', short: 'TT', href: '#' },
+    { label: 'YouTube', short: 'YT', href: '#' },
   ],
 }
 

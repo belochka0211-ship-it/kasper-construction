@@ -47,6 +47,45 @@
     border: 2px solid $accent;
     animation: dock-pulse 2.2s ease-out infinite;
   }
+
+  &__menu { position: relative; display: flex; flex-direction: column; align-items: flex-end; gap: 12px; }
+
+  &__menu-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  &__btn--wa {
+    color: $on-accent;
+    background: linear-gradient(120deg, #6fd08c, #3fae63 60%);
+    border-color: transparent;
+  }
+
+  &__btn--burger {
+    background: rgba($bg-3, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  &__burger-line {
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    border-radius: 2px;
+    transition: transform $dur $ease-out, opacity $dur $ease-out;
+  }
+
+  &__btn--burger-open {
+    background: $accent;
+    color: $on-accent;
+    .dock__burger-line:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .dock__burger-line:nth-child(2) { opacity: 0; }
+    .dock__burger-line:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  }
 }
 @keyframes dock-pulse {
   0% { transform: scale(1); opacity: 0.6; }
