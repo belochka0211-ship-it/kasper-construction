@@ -20,7 +20,7 @@ export default class ErrorBoundary extends Component {
             <span className="notfound__code">!</span>
             <h1 className="notfound__title">Щось пішло не так</h1>
             <p className="notfound__text">Сталася помилка під час відображення сторінки.</p>
-            <a className="btn btn--accent btn--lg" href="/">На головну</a>
+            <a className="btn btn--accent btn--lg" href={import.meta.env.BASE_URL}>На головну</a>
           </div>
         </section>
       )
