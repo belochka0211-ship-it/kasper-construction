@@ -30,7 +30,7 @@ export default function Footer() {
           <span className="footer__col-title">{t('nav.contacts')}</span>
           <a className="footer__contact" href={`tel:${contact.phone.replace(/\s/g, '')}`}>{contact.phone}</a>
           <a className="footer__contact" href={`mailto:${contact.email}`}>{contact.email}</a>
-          <span className="footer__contact footer__contact--muted">{loc(contact.address)}</span>
+          <a className="footer__contact footer__contact--muted" href={contact.addressUrl} target="_blank" rel="noopener noreferrer">{loc(contact.address)}</a>
           <div className="footer__socials">
             {contact.socials.map((s) => (
               <a key={s.label} className="footer__social" href={s.href} aria-label={s.label}>{s.short}</a>

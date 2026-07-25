@@ -33,7 +33,7 @@ export default function Contacts() {
               </li>
               <li className="contacts__item">
                 <span className="contacts__label">{loc({ uk: 'Адреса', en: 'Address' })}</span>
-                <span className="contacts__value">{loc(contact.address)}</span>
+                <a className="contacts__value" href={contact.addressUrl} target="_blank" rel="noopener noreferrer">{loc(contact.address)}</a>
               </li>
               <li className="contacts__item">
                 <span className="contacts__label">{loc({ uk: 'Графік', en: 'Hours' })}</span>
@@ -50,9 +50,9 @@ export default function Contacts() {
             <div className="contacts__map">
               <iframe
                 className="contacts__map-frame"
-                title={loc({ uk: 'Карта — офіс Kasper', en: 'Map — Kasper office' })}
+                title={loc({ uk: 'Карта — офіс Kasper', en: 'Map — Kasper office', ru: 'Карта — офис Kasper' })}
                 loading="lazy"
-                src="https://www.openstreetmap.org/export/embed.html?bbox=30.508%2C50.415%2C30.532%2C50.428&layer=mapnik&marker=50.4214%2C30.5189"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-4.4324%2C36.7136%2C-4.4084%2C36.7256&layer=mapnik&marker=36.7196%2C-4.4204"
               />
             </div>
           </div>

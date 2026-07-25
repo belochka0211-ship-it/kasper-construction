@@ -8,6 +8,6 @@ import { localize } from '../lib/localize'
  */
 export default function useLocale() {
   const { i18n } = useTranslation()
-  const lang = i18n.language?.startsWith('en') ? 'en' : 'uk'
+  const lang = i18n.language?.startsWith('en') ? 'en' : i18n.language?.startsWith('ru') ? 'ru' : 'uk'
   return { lang, loc: (node) => localize(node, lang) }
 }

@@ -6,8 +6,9 @@ export function localize(node, lang) {
   if (Array.isArray(node)) return node.map((n) => localize(n, lang))
   if (typeof node === 'object') {
     const keys = Object.keys(node)
-    // A locale leaf has only uk/en keys (values may be strings or arrays).
-    if (keys.length > 0 && keys.length <= 2 && 'uk' in node && 'en' in node) {
+    // A locale leaf has only uk/en/ru keys (values may be strings or arrays).
+    const localeKeys = ['uk', 'en', 'ru']
+    if (keys.length > 0 && keys.length <= 3 && 'uk' in node && keys.every((k) => localeKeys.includes(k))) {
       return node[lang] ?? node.uk
     }
     const out = {}

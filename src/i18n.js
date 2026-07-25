@@ -76,6 +76,42 @@ const resources = {
       loaderTagline: 'Full-cycle construction studio',
     },
   },
+  ru: {
+    translation: {
+      nav: { home: 'Главная', about: 'О нас', services: 'Услуги', projects: 'Проекты', team: 'Команда', journal: 'Журнал', estimate: 'Калькулятор', contacts: 'Контакты' },
+      footer: { guarantees: 'Гарантии', privacy: 'Конфиденциальность', cookies: 'Cookie', legal: 'Правовая информация', rights: 'Все права защищены.', tagline: 'Строительство и интерьеры под ключ. Киев · с {{year}} года.' },
+      cta: {
+        discuss: 'Обсудить проект', start: 'Начать проект', works: 'Смотреть работы',
+        allServices: 'Все услуги', allProjects: 'Все проекты', aboutStudio: 'О студии',
+        leaveRequest: 'Оставить заявку', order: 'Заказать услугу', submit: 'Отправить заявку',
+        toHome: 'На главную', more: 'Подробнее', consult: 'Заказать консультацию',
+      },
+      labels: {
+        nextProject: 'Следующий проект', included: 'Что входит', otherServices: 'Другие услуги',
+        steps: 'Этапы работы', scroll: 'Листайте', trusted: 'Нам доверяют девелоперы и бренды',
+        crumbHome: 'Главная', readMore: 'Читать', minRead: 'мин чтения',
+      },
+      form: {
+        name: 'Имя', phone: 'Телефон', type: 'Тип проекта', message: 'Сообщение',
+        choose: 'Выберите направление', namePh: 'Ваше имя', msgPh: 'Коротко о задаче…',
+        note: 'Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности.',
+        success: 'Спасибо!', successText: 'Заявка отправлена. Мы свяжемся с вами в ближайшее время.',
+        sending: 'Отправляем…', error: 'Что-то пошло не так. Попробуйте ещё раз или позвоните нам.',
+        errName: 'Укажите имя', errPhone: 'Укажите корректный телефон',
+        t1: 'Частная недвижимость', t2: 'Коммерческий объект', t3: 'Дизайн интерьера', t4: 'Другое',
+      },
+      cookie: {
+        text: 'Мы используем cookie для аналитики.',
+        accept: 'Принять', decline: 'Отклонить', more: 'Подробнее',
+      },
+      sections: {
+        testimonialsKicker: 'Отзывы', testimonialsTitle: 'Что говорят клиенты',
+        faqKicker: 'FAQ', faqTitle: 'Частые вопросы',
+        journalKicker: 'Журнал', journalTitle: 'Мысли и инсайты', allPosts: 'Все статьи',
+      },
+      loaderTagline: 'Строительная студия полного цикла',
+    },
+  },
 }
 
 const saved = typeof localStorage !== 'undefined' ? localStorage.getItem('lang') : null
