@@ -17,20 +17,16 @@ export default function Cursor() {
 
     let mx = window.innerWidth / 2
     let my = window.innerHeight / 2
-    let hover = false
     let raf
 
     const onMove = (e) => {
       mx = e.clientX
       my = e.clientY
       const over = e.target.closest('a, button, [data-cursor]')
-      hover = !!over
-      dot.current?.classList.toggle('cursor__arrow--hover', hover)
+      dot.current?.classList.toggle('cursor__arrow--hover', !!over)
     }
     const loop = () => {
-      if (dot.current) {
-        dot.current.style.transform = `translate(${mx}px, ${my}px) scale(${hover ? 1.6 : 1})`
-      }
+      if (dot.current) dot.current.style.transform = `translate(${mx}px, ${my}px)`
       raf = requestAnimationFrame(loop)
     }
     window.addEventListener('mousemove', onMove)
