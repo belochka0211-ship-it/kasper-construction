@@ -54,7 +54,7 @@
     border: 1px solid $line-2;
     background: rgba($bg, 0.5);
     transition: background $dur $ease-soft, color $dur $ease-soft, transform $dur $ease-out;
-    &:hover { background: $accent; color: $on-accent; border-color: transparent; }
+    &:hover { background: $accent; color: $on-accent; border-color: transparent; transform: scale(1.08); }
   }
   &__close { top: 22px; right: 22px; width: 48px; height: 48px; font-size: 1.1rem; }
   &__nav {
@@ -64,7 +64,7 @@
     transform: translateY(-50%);
     &--prev { left: clamp(12px, 3vw, 40px); }
     &--next { right: clamp(12px, 3vw, 40px); }
-    &:hover { transform: translateY(-50%) scale(1.05); }
+    &:hover { transform: translateY(-50%) scale(1.08); }
   }
   &__count {
     position: absolute;

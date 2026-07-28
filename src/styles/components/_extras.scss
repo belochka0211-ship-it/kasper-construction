@@ -30,7 +30,7 @@
     backdrop-filter: blur(10px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     transition: transform $dur $ease-out, background $dur $ease-soft, color $dur $ease-soft;
-    &:hover { transform: translateY(-3px); }
+    &:hover { transform: scale(1.08); }
 
     &--call {
       color: $on-accent;
@@ -130,7 +130,7 @@
     font-weight: 600;
     color: $ink;
     transition: background $dur $ease-soft, color $dur $ease-soft, transform $dur $ease-out;
-    &:hover { background: $accent; color: $on-accent; border-color: transparent; transform: translateY(-3px); }
+    &:hover { background: $accent; color: $on-accent; border-color: transparent; transform: scale(1.08); }
   }
 }
 

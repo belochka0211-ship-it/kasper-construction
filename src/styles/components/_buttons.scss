@@ -35,7 +35,7 @@
       transition: opacity $dur $ease-soft;
     }
     &:hover {
-      transform: translateY(-2px);
+      transform: scale(1.05);
       box-shadow: 0 16px 38px rgba($accent, 0.34);
       &::after { opacity: 1; }
     }
@@ -59,7 +59,7 @@
     &:hover {
       color: $on-accent;
       border-color: transparent;
-      transform: translateY(-2px);
+      transform: scale(1.05);
       &::after { background: linear-gradient(120deg, $accent-2, $accent 60%); transform: translateY(0); }
     }
   }

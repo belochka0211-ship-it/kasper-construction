@@ -34,7 +34,7 @@
     font-size: 0.82rem;
     font-weight: 600;
     transition: background $dur $ease-soft, color $dur $ease-soft, transform $dur $ease-out;
-    &:hover { background: $accent; color: $on-accent; border-color: transparent; transform: translateY(-3px); }
+    &:hover { background: $accent; color: $on-accent; border-color: transparent; transform: scale(1.08); }
   }
 
   &__map {
