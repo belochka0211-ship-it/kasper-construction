@@ -35,7 +35,7 @@ export default function ServiceDetail() {
         description={service.excerpt}
         path={`/services/${service.slug}`}
         image={service.image}
-        jsonLd={{ '@context': 'https://schema.org', '@type': 'Service', name: service.title, description: service.excerpt, provider: { '@type': 'Organization', name: 'Kasper' } }}
+        jsonLd={{ '@context': 'https://schema.org', '@type': 'Service', name: service.title, description: service.excerpt, provider: { '@type': 'Organization', name: 'The Wall Building' } }}
       />
       <PageHero
         kicker={loc({ uk: 'Послуга', en: 'Service', ru: 'Услуга' })}

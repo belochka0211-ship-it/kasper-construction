@@ -8,7 +8,7 @@ const DEFAULT_OG =
  * Per-page SEO: title, description, canonical, Open Graph + optional JSON-LD.
  */
 export default function Seo({ title, description, path = '', image = DEFAULT_OG, jsonLd }) {
-  const fullTitle = title ? `${title} — Kasper` : 'Kasper — будівництво та інтерʼєри під ключ'
+  const fullTitle = title ? `${title} — The Wall Building` : 'The Wall Building — будівництво та інтерʼєри під ключ'
   const url = `${SITE}${path}`
   return (
     <Helmet>
@@ -30,7 +30,7 @@ export default function Seo({ title, description, path = '', image = DEFAULT_OG,
 export const orgJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'GeneralContractor',
-  name: 'Kasper',
+  name: 'The Wall Building',
   url: SITE,
   telephone: '+971585320771',
   email: 'TheWallBuilding@info.com',

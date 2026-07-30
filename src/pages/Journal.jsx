@@ -18,7 +18,7 @@ export default function Journal() {
 
   return (
     <PageWrap>
-      <Seo title={loc({ uk: 'Журнал', en: 'Journal', ru: 'Журнал' })} description={loc({ uk: 'Думки та інсайти про будівництво, дизайн і управління проєктами від студії Kasper.', en: 'Thoughts and insights on construction, design and project management from Kasper.', ru: 'Мысли и инсайты о строительстве, дизайне и управлении проектами от студии Kasper.' })} path="/journal" />
+      <Seo title={loc({ uk: 'Журнал', en: 'Journal', ru: 'Журнал' })} description={loc({ uk: 'Думки та інсайти про будівництво, дизайн і управління проєктами від студії The Wall Building.', en: 'Thoughts and insights on construction, design and project management from The Wall Building.', ru: 'Мысли и инсайты о строительстве, дизайне и управлении проектами от студии The Wall Building.' })} path="/journal" />
       <PageHero
         kicker={t('sections.journalKicker')}
         title={loc({ uk: 'Думки та інсайти', en: 'Thoughts & insights', ru: 'Мысли и инсайты' })}

@@ -24,7 +24,7 @@ export default function Team() {
       <Seo title={loc({ uk: 'Команда', en: 'Team', ru: 'Команда' })} description={loc({ uk: 'Інженери, архітектори та менеджери, що ведуть ваш проєкт від ідеї до ключів.', en: 'Engineers, architects and managers who take your project from idea to keys.', ru: 'Инженеры, архитекторы и менеджеры, которые ведут ваш проект от идеи до ключей.' })} path="/team" />
       <PageHero
         kicker={loc({ uk: 'Команда', en: 'Team', ru: 'Команда' })}
-        title={loc({ uk: 'Люди, які будують Kasper', en: 'The people who build Kasper', ru: 'Люди, которые строят Kasper' })}
+        title={loc({ uk: 'Люди, які будують The Wall Building', en: 'The people who build The Wall Building', ru: 'Люди, которые строят The Wall Building' })}
         text={loc({ uk: 'Інженери, архітектори та менеджери, що ведуть ваш проєкт від ідеї до ключів.', en: 'Engineers, architects and managers who take your project from idea to keys.', ru: 'Инженеры, архитекторы и менеджеры, которые ведут ваш проект от идеи до ключей.' })}
         image="/img/office-prohub.jpg"
         crumbs={[{ label: loc({ uk: 'Команда', en: 'Team', ru: 'Команда' }) }]}

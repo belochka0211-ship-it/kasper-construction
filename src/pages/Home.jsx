@@ -38,7 +38,7 @@ export default function Home() {
   return (
     <PageWrap>
       <Seo
-        description={loc({ uk: 'Kasper — будівельна студія повного циклу. Організація, управління та нагляд за будівництвом житлових і комерційних обʼєктів.', en: 'Kasper — a full-cycle construction studio. Planning, management and supervision of residential and commercial builds.', ru: 'Kasper — строительная студия полного цикла. Организация, управление и надзор за строительством жилых и коммерческих объектов.' })}
+        description={loc({ uk: 'The Wall Building — будівельна студія повного циклу. Організація, управління та нагляд за будівництвом житлових і комерційних обʼєктів.', en: 'The Wall Building — a full-cycle construction studio. Planning, management and supervision of residential and commercial builds.', ru: 'The Wall Building — строительная студия полного цикла. Организация, управление и надзор за строительством жилых и коммерческих объектов.' })}
         path="/"
         jsonLd={orgJsonLd}
       />
@@ -84,7 +84,7 @@ export default function Home() {
       <section className="section">
         <div className="container about-teaser">
           <Reveal className="about-teaser__media">
-            <img className="about-teaser__img" src={asset(home.aboutTeaser.image)} alt={loc({ uk: 'Інтерʼєр проєкту Kasper', en: 'Kasper project interior', ru: 'Интерьер проекта Kasper' })} loading="lazy" />
+            <img className="about-teaser__img" src={asset(home.aboutTeaser.image)} alt={loc({ uk: 'Інтерʼєр проєкту The Wall Building', en: 'The Wall Building project interior', ru: 'Интерьер проекта The Wall Building' })} loading="lazy" />
           </Reveal>
           <div className="about-teaser__content">
             <SectionHead kicker={loc(home.aboutTeaser.kicker)} title={loc(home.aboutTeaser.title)} />

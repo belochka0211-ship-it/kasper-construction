@@ -10,7 +10,7 @@ export default function Contacts() {
   const { loc } = useLocale()
   return (
     <PageWrap>
-      <Seo title={loc({ uk: 'Контакти', en: 'Contacts', ru: 'Контакты' })} description={loc({ uk: 'Звʼяжіться зі студією Kasper: телефон, email, адреса. Відповідаємо протягом дня.', en: 'Get in touch with Kasper: phone, email, address. We reply within a day.', ru: 'Свяжитесь со студией Kasper: телефон, email, адрес. Отвечаем в течение дня.' })} path="/contacts" />
+      <Seo title={loc({ uk: 'Контакти', en: 'Contacts', ru: 'Контакты' })} description={loc({ uk: 'Звʼяжіться зі студією The Wall Building: телефон, email, адреса. Відповідаємо протягом дня.', en: 'Get in touch with The Wall Building: phone, email, address. We reply within a day.', ru: 'Свяжитесь со студией The Wall Building: телефон, email, адрес. Отвечаем в течение дня.' })} path="/contacts" />
       <PageHero
         kicker={loc({ uk: 'Контакти', en: 'Contacts', ru: 'Контакты' })}
         title={loc({ uk: 'Поговоримо про ваш проєкт', en: 'Let’s talk about your project', ru: 'Поговорим о вашем проекте' })}
@@ -50,7 +50,7 @@ export default function Contacts() {
             <div className="contacts__map">
               <iframe
                 className="contacts__map-frame"
-                title={loc({ uk: 'Карта — офіс Kasper', en: 'Map — Kasper office', ru: 'Карта — офис Kasper' })}
+                title={loc({ uk: 'Карта — офіс The Wall Building', en: 'Map — The Wall Building office', ru: 'Карта — офис The Wall Building' })}
                 loading="lazy"
                 src="https://www.openstreetmap.org/export/embed.html?bbox=-4.4324%2C36.7136%2C-4.4084%2C36.7256&layer=mapnik&marker=36.7196%2C-4.4204"
               />

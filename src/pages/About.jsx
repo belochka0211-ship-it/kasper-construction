@@ -26,7 +26,7 @@ const process = [
 ]
 
 const timeline = [
-  { y: '2012', t: { uk: 'Заснування', en: 'Founded', ru: 'Основание' }, d: { uk: 'Kasper починає з ремонтів квартир у Малазі.', en: 'Kasper starts out doing apartment renovations in Málaga.', ru: 'Kasper начинает с ремонтов квартир в Малаге.' } },
+  { y: '2012', t: { uk: 'Заснування', en: 'Founded', ru: 'Основание' }, d: { uk: 'The Wall Building починає з ремонтів квартир у Малазі.', en: 'The Wall Building starts out doing apartment renovations in Málaga.', ru: 'The Wall Building начинает с ремонтов квартир в Малаге.' } },
   { y: '2015', t: { uk: 'Перші обʼєкти під ключ', en: 'First turnkey projects', ru: 'Первые объекты под ключ' }, d: { uk: 'Переходимо до повного циклу будівництва.', en: 'We move to full-cycle construction.', ru: 'Переходим к полному циклу строительства.' } },
   { y: '2018', t: { uk: 'Власне виробництво', en: 'Own workshop', ru: 'Собственное производство' }, d: { uk: 'Запускаємо цех корпусних і мʼяких меблів.', en: 'We open a workshop for cabinetry and upholstery.', ru: 'Запускаем цех корпусной и мягкой мебели.' } },
   { y: '2021', t: { uk: 'Комерційні простори', en: 'Commercial spaces', ru: 'Коммерческие пространства' }, d: { uk: 'Офіси, готелі та шоуруми у портфоліо.', en: 'Offices, hotels and showrooms join the portfolio.', ru: 'Офисы, отели и шоурумы в портфолио.' } },
@@ -41,7 +41,7 @@ export default function About() {
 
   return (
     <PageWrap>
-      <Seo title={loc({ uk: 'Про нас', en: 'About', ru: 'О нас' })} description={loc({ uk: '13 років досвіду, 700+ завершених обʼєктів. Інженери, архітектори та будівельники Kasper.', en: '13 years of experience, 700+ completed projects. The engineers, architects and builders of Kasper.', ru: '13 лет опыта, 700+ завершённых объектов. Инженеры, архитекторы и строители Kasper.' })} path="/about" />
+      <Seo title={loc({ uk: 'Про нас', en: 'About', ru: 'О нас' })} description={loc({ uk: '13 років досвіду, 700+ завершених обʼєктів. Інженери, архітектори та будівельники The Wall Building.', en: '13 years of experience, 700+ completed projects. The engineers, architects and builders of The Wall Building.', ru: '13 лет опыта, 700+ завершённых объектов. Инженеры, архитекторы и строители The Wall Building.' })} path="/about" />
       <PageHero
         kicker={loc({ uk: 'Про студію', en: 'About the studio', ru: 'О студии' })}
         title={loc({ uk: '13 років, 700+ обʼєктів і жодного «ми за це не відповідаємо»', en: '13 years, 700+ projects and no “that’s not our problem”', ru: '13 лет, 700+ объектов и ни одного «мы за это не отвечаем»' })}
@@ -54,7 +54,7 @@ export default function About() {
       <section className="section">
         <div className="container about-intro" ref={ref}>
           <div className="about-intro__media">
-            <motion.img className="about-intro__img" style={{ y }} src={asset('/img/int-1.jpg')} alt={loc({ uk: 'Інтерʼєр проєкту Kasper', en: 'Kasper project interior', ru: 'Интерьер проекта Kasper' })} loading="lazy" />
+            <motion.img className="about-intro__img" style={{ y }} src={asset('/img/int-1.jpg')} alt={loc({ uk: 'Інтерʼєр проєкту The Wall Building', en: 'The Wall Building project interior', ru: 'Интерьер проекта The Wall Building' })} loading="lazy" />
           </div>
           <div className="about-intro__content">
             <SectionHead kicker={loc({ uk: 'Хто ми', en: 'Who we are', ru: 'Кто мы' })} title={loc({ uk: 'Проєктувальники й будівельники під одним дахом', en: 'Designers and builders under one roof', ru: 'Проектировщики и строители под одной крышей' })} />

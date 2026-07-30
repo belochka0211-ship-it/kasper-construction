@@ -35,7 +35,7 @@ export default function JournalPost() {
           headline: post.title,
           datePublished: post.date,
           image: post.cover,
-          author: { '@type': 'Organization', name: 'Kasper' },
+          author: { '@type': 'Organization', name: 'The Wall Building' },
         }}
       />
       <PageHero

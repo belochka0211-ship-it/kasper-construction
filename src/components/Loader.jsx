@@ -42,7 +42,7 @@ export default function Loader() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             >
-              Kasper<span className="loader__dot">.</span>
+              The Wall Building<span className="loader__dot">.</span>
             </motion.span>
             <motion.span
               className="loader__tagline"

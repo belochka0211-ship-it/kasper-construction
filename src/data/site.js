@@ -2,7 +2,7 @@
 // Plain values (slugs, phone, images, numbers) stay as-is.
 
 export const brand = {
-  name: 'Kasper',
+  name: 'The Wall Building',
   since: 2012,
 }
 
@@ -70,9 +70,9 @@ export const home = {
       ru: 'Строим так, чтобы не было стыдно вернуться через 10 лет',
     },
     text: {
-      uk: 'Kasper — це інженери, архітектори й будівельники, які ведуть обʼєкт від першого ескізу до ключів. За бюджет, строки та якість відповідаємо ми, а не «субпідрядник субпідрядника».',
-      en: 'Kasper is engineers, architects and builders who carry a project from the first sketch to the keys. The budget, the deadlines and the quality are on us — not on “the subcontractor’s subcontractor”.',
-      ru: 'Kasper — это инженеры, архитекторы и строители, которые ведут объект от первого эскиза до ключей. За бюджет, сроки и качество отвечаем мы, а не «субподрядчик субподрядчика».',
+      uk: 'The Wall Building — це інженери, архітектори й будівельники, які ведуть обʼєкт від першого ескізу до ключів. За бюджет, строки та якість відповідаємо ми, а не «субпідрядник субпідрядника».',
+      en: 'The Wall Building is engineers, architects and builders who carry a project from the first sketch to the keys. The budget, the deadlines and the quality are on us — not on “the subcontractor’s subcontractor”.',
+      ru: 'The Wall Building — это инженеры, архитекторы и строители, которые ведут объект от первого эскиза до ключей. За бюджет, сроки и качество отвечаем мы, а не «субподрядчик субподрядчика».',
     },
     image: '/img/int-1.jpg',
   },
