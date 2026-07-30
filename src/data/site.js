@@ -32,6 +32,7 @@ export const contact = {
   },
   socials: [
     { label: 'Telegram', short: 'TG', href: 'https://t.me/The_Wall_Building' },
+    { label: 'WhatsApp', short: 'WA', href: 'https://wa.me/380937777979' },
     { label: 'TikTok', short: 'TT', href: 'https://www.tiktok.com/@thewallbuilding' },
   ],
 }
