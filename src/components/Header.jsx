@@ -35,9 +35,12 @@ export default function Header() {
 
   return (
     <header className={`header${scrolled ? ' header--scrolled' : ''}${open ? ' header--open' : ''}`}>
+      <Link to="/" className="header__mark" aria-label={brand.name}>
+        <img src={asset('/img/logo-mark.svg')} alt="" />
+      </Link>
+
       <div className="header__inner container">
         <Link to="/" className="header__logo" aria-label={`${brand.name} — на головну`}>
-          <img className="header__logo-mark" src={asset('/img/logo-mark.svg')} alt="" />
           {brand.name}<span className="header__logo-dot">.</span>
         </Link>
 
