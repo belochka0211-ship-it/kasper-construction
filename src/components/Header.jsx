@@ -3,7 +3,6 @@ import { Link, NavLink } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { brand, nav, contact } from '../data/site'
 import LanguageToggle from './LanguageToggle'
-import Magnetic from './Magnetic'
 import useFocusTrap from '../hooks/useFocusTrap'
 
 export default function Header() {
@@ -61,9 +60,6 @@ export default function Header() {
 
         <div className="header__actions">
           <LanguageToggle className="header__lang" />
-          <Magnetic>
-            <Link className="btn btn--accent header__cta" to="/contacts">{t('cta.discuss')}</Link>
-          </Magnetic>
           <button
             className={`burger${open ? ' burger--active' : ''}`}
             aria-label="Меню"
