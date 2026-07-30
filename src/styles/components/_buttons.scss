@@ -52,15 +52,15 @@
       position: absolute;
       inset: 0;
       z-index: -1;
-      background: $ink;
-      transform: translateY(101%);
-      transition: transform $dur $ease-out;
+      background: linear-gradient(120deg, $accent-2, $accent 60%);
+      opacity: 0;
+      transition: opacity $dur $ease-soft;
     }
     &:hover {
       color: $on-accent;
       border-color: transparent;
       transform: scale(1.05);
-      &::after { background: linear-gradient(120deg, $accent-2, $accent 60%); transform: translateY(0); }
+      &::after { opacity: 1; }
     }
   }
 }

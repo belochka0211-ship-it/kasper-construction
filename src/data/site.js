@@ -31,11 +31,8 @@ export const contact = {
     ru: 'Пн–Пт, 10:00–20:00 · Сб, 10:00–18:00 · Вс — выходной',
   },
   socials: [
-    { label: 'Instagram', short: 'IG', href: '#' },
-    { label: 'Telegram', short: 'TG', href: '#' },
-    { label: 'Pinterest', short: 'Pi', href: '#' },
-    { label: 'TikTok', short: 'TT', href: '#' },
-    { label: 'YouTube', short: 'YT', href: '#' },
+    { label: 'Telegram', short: 'TG', href: 'https://t.me/The_Wall_Building' },
+    { label: 'TikTok', short: 'TT', href: 'https://www.tiktok.com/@thewallbuilding' },
   ],
 }
 

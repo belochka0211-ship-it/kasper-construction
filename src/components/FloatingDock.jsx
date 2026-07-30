@@ -45,7 +45,7 @@ export default function FloatingDock() {
               exit={{ opacity: 0, y: 10 }}
               transition={{ duration: 0.18 }}
             >
-              <a className="dock__btn dock__btn--tg" href="https://t.me/" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+              <a className="dock__btn dock__btn--tg" href="https://t.me/The_Wall_Building" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
                 <svg className="dock__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M21.5 3.5 2.6 10.9c-1.2.5-1.2 1.2-.2 1.5l4.8 1.5 1.8 5.6c.2.6.4.9.9.9.4 0 .6-.2.9-.5l2.1-2 4.4 3.2c.8.5 1.4.2 1.6-.7l3-14c.3-1.2-.4-1.7-1.4-1.4Zm-3.3 3.4-8 7.3-.3 3.4-1.5-4.8 8.6-6.5c.4-.3.8.1.4.4l-6.9 6.3 2.6 8-1.9-1.4Z" fill="currentColor" />
                 </svg>
