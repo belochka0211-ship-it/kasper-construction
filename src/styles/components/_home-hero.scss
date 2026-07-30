@@ -5,7 +5,7 @@
   min-height: 100svh;
   display: flex;
   align-items: flex-end;
-  padding-block: 160px fluid(64, 110);
+  padding-block: 120px fluid(44, 84);
   overflow: hidden;
   color: $ink;
 
@@ -47,10 +47,10 @@
   }
 
   &__title {
-    margin-top: 26px;
-    font-size: fluid(40, 96);
+    margin-top: 18px;
+    font-size: fluid(38, 76);
     font-weight: 500;
-    line-height: 1.0;
+    line-height: 1.02;
     letter-spacing: -0.02em;
     max-width: 30ch;
   }
@@ -59,13 +59,13 @@
   &__line-inner { display: block; will-change: transform; }
 
   &__text {
-    margin-top: 28px;
+    margin-top: 20px;
     max-width: 52ch;
-    font-size: fluid(16, 20);
+    font-size: fluid(15, 18);
     color: rgba($ink, 0.82);
   }
 
-  &__actions { margin-top: 40px; display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
+  &__actions { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
 
   &__scroll {
     position: absolute;

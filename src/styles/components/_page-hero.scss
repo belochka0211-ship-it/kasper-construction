@@ -4,8 +4,8 @@
   position: relative;
   display: flex;
   align-items: flex-end;
-  min-height: clamp(440px, 72vh, 720px);
-  padding-block: 150px fluid(48, 90);
+  min-height: clamp(400px, 62vh, 640px);
+  padding-block: 110px fluid(36, 64);
   overflow: hidden;
   color: $ink;
 
@@ -44,16 +44,16 @@
   }
 
   &__title {
-    margin-top: 18px;
-    font-size: fluid(38, 78);
+    margin-top: 16px;
+    font-size: fluid(32, 62);
     font-weight: 500;
     line-height: 1.03;
   }
 
   &__text {
-    margin-top: 22px;
+    margin-top: 18px;
     max-width: 58ch;
-    font-size: fluid(16, 20);
+    font-size: fluid(15, 18);
     color: rgba($ink, 0.82);
   }
 }
