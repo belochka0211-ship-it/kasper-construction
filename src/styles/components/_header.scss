@@ -24,6 +24,9 @@
   }
 
   &__logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
     font-family: $font-display;
     font-weight: 600;
     font-size: clamp(1.05rem, 1.6vw, 1.4rem);
@@ -32,6 +35,7 @@
     white-space: nowrap;
     flex-shrink: 0;
   }
+  &__logo-mark { height: clamp(24px, 2.4vw, 32px); width: auto; flex-shrink: 0; }
   &__logo-dot { color: $accent; }
 
   &__nav { display: flex; align-items: center; gap: 28px; }

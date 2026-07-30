@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { brand, nav, contact } from '../data/site'
+import { asset } from '../lib/asset'
 import LanguageToggle from './LanguageToggle'
 import useFocusTrap from '../hooks/useFocusTrap'
 
@@ -36,6 +37,7 @@ export default function Header() {
     <header className={`header${scrolled ? ' header--scrolled' : ''}${open ? ' header--open' : ''}`}>
       <div className="header__inner container">
         <Link to="/" className="header__logo" aria-label={`${brand.name} — на головну`}>
+          <img className="header__logo-mark" src={asset('/img/logo-mark.svg')} alt="" />
           {brand.name}<span className="header__logo-dot">.</span>
         </Link>
 
