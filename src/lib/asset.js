@@ -1,6 +1,6 @@
 // Prefixes root-absolute asset paths with Vite's BASE_URL so images work both
 // at the domain root and under a GitHub Pages project subpath.
-const BASE = import.meta.env.BASE_URL // e.g. '/' or '/kasper-construction/'
+const BASE = import.meta.env.BASE_URL // e.g. '/' or '/thewallbuilding/'
 
 export function asset(path) {
   if (typeof path !== 'string') return path
