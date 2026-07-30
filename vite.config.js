@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // Served from a GitHub Pages project subpath (username.github.io/<repo>/).
 // Override at build time with: BASE=/my-repo/ npm run build
-const base = process.env.BASE || '/thewallbuilding/'
+const base = process.env.BASE || '/'
 
 export default defineConfig({
   base,
