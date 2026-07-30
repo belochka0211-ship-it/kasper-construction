@@ -228,7 +228,7 @@ export const projects = [
     location: { uk: 'Дубай, Palm Jumeirah', en: 'Dubai, Palm Jumeirah', ru: 'Дубай, Palm Jumeirah' },
     year: '2026',
     area: '640 мІ',
-    cover: '/img/dubai-palm/img11.jpg',
+    cover: '/img/palm-jumeirah-11.jpg',
     summary: { uk: 'Резиденція на Palm Jumeirah з видом на затоку — тепла палітра каменю й дерева замість холодного глянцю.', en: 'A residence on Palm Jumeirah overlooking the bay — a warm palette of stone and wood instead of cold gloss.', ru: 'Резиденция на Palm Jumeirah с видом на залив — тёплая палитра камня и дерева вместо холодного глянца.' },
     challenge: { uk: 'Клієнт хотів преміальний рівень оздоблення, але без типової для Дубая надмірної розкоші.', en: 'The client wanted a premium finish level, without the over-the-top luxury typical of Dubai interiors.', ru: 'Клиент хотел премиальный уровень отделки, но без типичной для Дубая избыточной роскоши.' },
     solution: { uk: 'Зробили ставку на натуральний камінь, шпон і латунь — і на світло, яке підкреслює фактуру, а не блиск.', en: 'We leaned on natural stone, veneer and brass — and on light that highlights texture rather than shine.', ru: 'Сделали ставку на натуральный камень, шпон и латунь — и на свет, который подчёркивает фактуру, а не блеск.' },
@@ -241,9 +241,9 @@ export const projects = [
     ],
     quote: { text: { uk: 'Боялись отримати «типовий Дубай». Отримали дім, який хочеться показувати, а не соромитись.', en: 'We feared a “typical Dubai” look. We got a home we want to show off, not hide.', ru: 'Боялись получить «типичный Дубай». Получили дом, который хочется показывать, а не стесняться.' }, author: { uk: 'Власник резиденції', en: 'Homeowner', ru: 'Владелец резиденции' } },
     gallery: [
-      '/img/dubai-palm/img1.jpg', '/img/dubai-palm/img2.jpg', '/img/dubai-palm/img3.jpg', '/img/dubai-palm/img4.jpg',
-      '/img/dubai-palm/img5.jpg', '/img/dubai-palm/img6.jpg', '/img/dubai-palm/img7.jpg', '/img/dubai-palm/img8.jpg',
-      '/img/dubai-palm/img9.jpg', '/img/dubai-palm/img10.jpg', '/img/dubai-palm/img11.jpg', '/img/dubai-palm/img12.jpg',
+      '/img/palm-jumeirah-1.jpg', '/img/palm-jumeirah-2.jpg', '/img/palm-jumeirah-3.jpg', '/img/palm-jumeirah-4.jpg',
+      '/img/palm-jumeirah-5.jpg', '/img/palm-jumeirah-6.jpg', '/img/palm-jumeirah-7.jpg', '/img/palm-jumeirah-8.jpg',
+      '/img/palm-jumeirah-9.jpg', '/img/palm-jumeirah-10.jpg', '/img/palm-jumeirah-11.jpg', '/img/palm-jumeirah-12.jpg',
     ],
   },
 ]
