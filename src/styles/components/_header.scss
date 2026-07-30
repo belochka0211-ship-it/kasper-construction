@@ -10,11 +10,12 @@
 
   &__mark {
     position: fixed;
-    top: 14px;
-    left: 14px;
+    top: 10px;
+    left: 10px;
     z-index: 8900;
     display: block;
-    img { height: clamp(48px, 5.2vw, 72px); width: auto; display: block; }
+    pointer-events: auto;
+    img { height: clamp(100px, 11vw, 170px); width: auto; display: block; filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.35)); }
   }
 
   &__inner.container {
@@ -22,7 +23,7 @@
     align-items: center;
     justify-content: space-between;
     height: 86px;
-    padding-left: 76px;
+    padding-left: clamp(120px, 13vw, 190px);
     transition: height $dur $ease-soft, padding $dur $ease-soft;
   }
 
