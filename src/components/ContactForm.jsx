@@ -2,9 +2,10 @@ import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { trackEvent } from '../lib/analytics'
 
-// Telegram bot that receives every form submission from the site.
-const TG_TOKEN = '8766125313:AAFNpM6R2Kj90j-SCw5IDdF27hjc29uzvs4'
-const TG_CHAT_ID = '331136814'
+// Configure a real endpoint via VITE_FORM_ENDPOINT (e.g. a Formspree URL,
+// Telegram bot relay, or your own API). Without it, the form simulates a
+// successful submit (demo) so the UI can still be reviewed.
+const ENDPOINT = import.meta.env.VITE_FORM_ENDPOINT
 
 export default function ContactForm() {
   const { t } = useTranslation()
@@ -32,22 +33,16 @@ export default function ContactForm() {
 
     setStatus('sending')
     try {
-      const lines = [
-        '🆕 Нова заявка з сайту',
-        `👤 Імʼя: ${data.name}`,
-        `📞 Телефон: ${data.phone}`,
-        data.type ? `🏗 Тип проєкту: ${data.type}` : null,
-        data.message ? `💬 Повідомлення: ${data.message}` : null,
-        `🌐 Сторінка: ${window.location.href}`,
-      ].filter(Boolean)
-
-      const res = await fetch(`https://api.telegram.org/bot${TG_TOKEN}/sendMessage`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ chat_id: TG_CHAT_ID, text: lines.join('\n') }),
-      })
-      if (!res.ok) throw new Error('Bad response')
-
+      if (ENDPOINT) {
+        const res = await fetch(ENDPOINT, {
+          method: 'POST',
+          headers: { Accept: 'application/json', 'Content-Type': 'application/json' },
+          body: JSON.stringify(data),
+        })
+        if (!res.ok) throw new Error('Bad response')
+      } else {
+        await new Promise((r) => setTimeout(r, 700)) // demo delay
+      }
       setStatus('sent')
       trackEvent('lead_submit', { type: data.type || 'unknown' })
       form.reset()
